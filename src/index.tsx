@@ -1,47 +1,36 @@
 import { Hono } from "hono"
-import { basicAuth } from "hono/basic-auth"
 import { serveStatic } from "hono/cloudflare-workers"
 
 const app = new Hono()
 
-const Home = () => {
+const Home = (props) => {
   return (
     <html>
       <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/main.css" />
+        <link rel="stylesheet" href="/styles/tailwind.css" />
       </head>
       <body>
-        Hello, Hono
+        { props.children }
       </body>
     </html>
-  );
-};
+  )
+}
 
 app.get("/", (c) => {
-  return c.html(<Home />)
+  return c.html(
+    <Home>
+      <div class="sidebar w-64 h-screen bg-gray-800 text-white p-4">
+        <a href="#about" class="sidebar-link block py-2 px-4 hover:bg-gray-700">About</a>
+        <a href="#projects" class="sidebar-link block py-2 px-4 hover:bg-gray-700">Projects</a>
+        <a href="#contact" class="sidebar-link block py-2 px-4 hover:bg-gray-700">Contact</a>
+      </div>
+    </Home>
+  )
 })
 
-app.get("/posts/:id", (c) => {
-  const page = c.req.query("page")
-  const id = c.req.query("id")
-  return c.text(`${page} is ${id}`)
-})
-
-app.use(
-  "/admin/*",
-  basicAuth({
-    username: "admin",
-    password: "admin",
-  })
-)
-
-app.get("/admin", (c) => {
-  return c.text("you are admin.")
-})
-
-app.get("/hoge", serveStatic({ path: "./static/hoge.html" }))
-
-app.get("/render", (c) => {
-  return c.html(<h1>fufufu</h1>)
-})
+app.get("/styles/*", serveStatic({ root: "./" }))
 
 export default app
