@@ -13,8 +13,10 @@ const Home = (props) => {
         <link rel="stylesheet" href="/styles/tailwind.css" />
       </head>
       <body>
-        <SideBar />
-        { props.children }
+        <div class="container">
+          <SideBar />
+          { props.children }
+        </div>
       </body>
     </html>
   )
