@@ -13,20 +13,26 @@ const Home = (props) => {
         <link rel="stylesheet" href="/styles/tailwind.css" />
       </head>
       <body>
+        <SideBar />
         { props.children }
       </body>
     </html>
   )
 }
 
+const SideBar = () => {
+  return (
+    <div class="sidebar w-64 h-screen bg-gray-800 text-white p-4">
+      <a href="#about" class="sidebar-link block py-2 px-4 hover:bg-gray-700">About</a>
+      <a href="#projects" class="sidebar-link block py-2 px-4 hover:bg-gray-700">Projects</a>
+      <a href="#contact" class="sidebar-link block py-2 px-4 hover:bg-gray-700">Contact</a>
+    </div>
+  )
+}
+
 app.get("/", (c) => {
   return c.html(
     <Home>
-      <div class="sidebar w-64 h-screen bg-gray-800 text-white p-4">
-        <a href="#about" class="sidebar-link block py-2 px-4 hover:bg-gray-700">About</a>
-        <a href="#projects" class="sidebar-link block py-2 px-4 hover:bg-gray-700">Projects</a>
-        <a href="#contact" class="sidebar-link block py-2 px-4 hover:bg-gray-700">Contact</a>
-      </div>
     </Home>
   )
 })
