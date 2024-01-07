@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ryorange: '#fd8850',
+        rorange: '#fd8850',
+        rblue: '#3aafb9',
+        rgray: '#292f36',
+        rwhite: '#fffcf9',
       },
     },
   },
