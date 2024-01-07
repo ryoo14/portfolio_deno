@@ -26,11 +26,11 @@ const Home = (props) => {
 
 const SideBar = () => {
   return (
-    <div class="sidebar w-64 h-screen bg-rwhite text-rgray p-4">
-      <a href="#work" class="sidebar-link block py-2 px-4">Works</a>
-      <a href="#use" class="sidebar-link block py-2 px-4">Uses</a>
-      <a href="#blog" class="sidebar-link block py-2 px-4">Blog</a>
-      <a href="#link" class="sidebar-link block py-2 px-4">Links</a>
+    <div class="sidebar">
+      <a href="#work" class="sidebar-link">Works</a>
+      <a href="#use" class="sidebar-link">Uses</a>
+      <a href="https://blog.ryoo.cc" target="_blank" rel="noreferrer" class="sidebar-link">Blog</a>
+      <a href="#link" class="sidebar-link">Links</a>
     </div>
   )
 }
@@ -44,32 +44,37 @@ const ContentTemplate = (props: Contents) => {
 
 type Contents = {
   type: string;
-  contents: [
-    {
-      title: string;
-      thumbnail: string;
-    }
-  ]
+  contents: Content[];
 }
+
+type Content = {
+  title: string;
+  detail: string;
+  thumbnail: string;
+}
+
 
 const work: Contents = {
   type: "work",
   contents: [
-    { title: "patty", thumbnail: "https://github.com/ryoo14/patty" }
+    { title: "patty", detail: "patty", thumbnail: "https://github.com/ryoo14/patty" }
   ]
 }
 
 const use: Contents = {
   type: "use",
   contents: [
-    { title: "Neo65", thumbnail: "https://github.com/ryoo14/patty" }
+    { title: "Neo65", detail: "It's Neo65", thumbnail: "" }
   ]
 }
 
 const link: Contents = {
   type: "link",
   contents: [
-    { title: "twitter", thumbnail: "https://github.com/ryoo14/patty" }
+    { title: "AtCoder", detail: "https://atcoder.jp/users/ryoo14", thumbnail: "" },
+    { title: "GitHub",  detail: "https://github.com/ryoo14", thumbnail: "" },
+    { title: "Instagram", detail: "https://www.instagram.com/ryoo141", thumbnail: "" },
+    { title: "Twitter", detail: "https://twitter.com/ryoo141", thumbnail: "" }
   ]
 }
 
