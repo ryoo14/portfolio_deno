@@ -35,9 +35,50 @@ const SideBar = () => {
   )
 }
 
+const ContentTemplate = (props: Contents) => {
+  return (
+    <div class={ props.type }>
+    </div>
+  )
+}
+
+type Contents = {
+  type: string;
+  contents: [
+    {
+      title: string;
+      thumbnail: string;
+    }
+  ]
+}
+
+const work: Contents = {
+  type: "work",
+  contents: [
+    { title: "patty", thumbnail: "https://github.com/ryoo14/patty" }
+  ]
+}
+
+const use: Contents = {
+  type: "use",
+  contents: [
+    { title: "Neo65", thumbnail: "https://github.com/ryoo14/patty" }
+  ]
+}
+
+const link: Contents = {
+  type: "link",
+  contents: [
+    { title: "twitter", thumbnail: "https://github.com/ryoo14/patty" }
+  ]
+}
+
 app.get("/", (c) => {
   return c.html(
     <Home>
+      <ContentTemplate { ...work } />
+      <ContentTemplate { ...use } />
+      <ContentTemplate { ...link } />
       Hello, Hono
     </Home>
   )
