@@ -50,7 +50,7 @@ export type Contents = {
   contents: Content[];
 }
 
-export type Content = {
+type Content = {
   title: string;
   detail: string;
   thumbnail: string;

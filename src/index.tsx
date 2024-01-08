@@ -1,6 +1,6 @@
 import { Hono } from "hono"
 import { serveStatic } from "hono/cloudflare-workers"
-import { Home, Contents, ContentTemplate, Content } from "./components"
+import { Home, Contents, ContentTemplate} from "./components"
 
 const app = new Hono()
 
