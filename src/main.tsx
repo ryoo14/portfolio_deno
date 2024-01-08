@@ -10,20 +10,20 @@ const work: Contents = {
     { 
       title: "HoloCut",
       detail: "Web App that collects clipped hololive videos.",
-      url: "",
-      thumbnail: "https://holocut.fan"
+      thumbnail: "",
+      url: "https://holocut.fan"
     },
     { 
       title: "patty",
       detail: "A CLI Tool for managing git and working directories written in Deno.",
-      url: "",
-      thumbnail: "https://github.com/ryoo14/patty"
+      thumbnail: "",
+      url: "https://github.com/ryoo14/patty"
     },
     { 
       title: "nautitwilight.vim",
       detail: "Nautical Twilight color scheme for Vim.",
-      url: "",
-      thumbnail: "https://github.com/ryoo14/nautitwilight.vim"
+      thumbnail: "",
+      url: "https://github.com/ryoo14/nautitwilight.vim"
     },
   ]
 }
@@ -33,21 +33,57 @@ const use: Contents = {
   contents: [
     { 
       title: "Neo65",
-      detail: "My main keyboard",
-      url: "",
-      thumbnail: "Neo65"
+      detail: "Primary Keyboard",
+      thumbnail: "",
+      url: "/neo65"
+    },
+    { 
+      title: "Nuphy Air60 v2",
+      detail: "Keyboard for outside use",
+      thumbnail: "",
+      url: "/air60v2"
     },
     { 
       title: "Planck EZ",
-      detail: "My main keyboard",
-      url: "",
-      thumbnail: "Neo65"
+      detail: "40% cute keyboard for occasional use",
+      thumbnail: "",
+      url: "/planck"
     },
-    { 
-      title: "Neo65",
-      detail: "My main keyboard",
-      url: "",
-      thumbnail: "Neo65"
+    {
+      title: "M2 MacBook Air 13\"",
+      detail: "Main machine",
+      thumbnail: "",
+      url: ""
+    },
+    {
+      title: "",
+      detail: "",
+      thumbnail: "",
+      url: ""
+    },
+    {
+      title: "",
+      detail: "",
+      thumbnail: "",
+      url: ""
+    },
+    {
+      title: "",
+      detail: "",
+      thumbnail: "",
+      url: ""
+    },
+    {
+      title: "",
+      detail: "",
+      thumbnail: "",
+      url: ""
+    },
+    {
+      title: "",
+      detail: "",
+      thumbnail: "",
+      url: ""
     },
   ]
 }
