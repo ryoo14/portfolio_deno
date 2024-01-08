@@ -23,13 +23,17 @@ export const Home = (props) => {
 const SideBar = () => {
   return (
     <div class="sidebar">
-      <a href="#work" class="sidebar-link">Works</a>
-      <a href="#use" class="sidebar-link">Uses</a>
-      <a href="https://blog.ryoo.cc" target="_blank" rel="noreferrer" class="sidebar-link">Blog</a>
-      <a href="https://twitter.com/ryoo141" target="_blanck" rel="noreferrer"><i class="ti ti-brand-twitter" /></a>
-      <a href="https://github.com/ryoo14" target="_blanck" rel="noreferrer"><i class="ti ti-brand-github" /></a>
-      <a href="https://www.instagram.com/ryoo141" target="_blanck" rel="noreferrer"><i class="ti ti-brand-instagram" /></a>
-      <a href="https://atcoder.jp/users/ryoo14" target="_blanck" rel="noreferrer"><i class="ti ti-code" /></a>
+      <div class="links">
+        <a href="#work" class="sidebar-link">Works</a>
+        <a href="#use" class="sidebar-link">Uses</a>
+        <a href="https://blog.ryoo.cc" target="_blank" rel="noreferrer" class="sidebar-link">Blog</a>
+      </div>
+      <div class="sns">
+        <a href="https://twitter.com/ryoo141" target="_blanck" rel="noreferrer"><i class="ti ti-brand-twitter" /></a>
+        <a href="https://github.com/ryoo14" target="_blanck" rel="noreferrer"><i class="ti ti-brand-github" /></a>
+        <a href="https://www.instagram.com/ryoo141" target="_blanck" rel="noreferrer"><i class="ti ti-brand-instagram" /></a>
+        <a href="https://atcoder.jp/users/ryoo14" target="_blanck" rel="noreferrer"><i class="ti ti-code" /></a>
+      </div>
     </div>
   )
 }
