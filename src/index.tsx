@@ -62,5 +62,6 @@ app.get("/", (c) => {
 })
 
 app.get("/styles/*", serveStatic({ root: "./" }))
+app.get("/static/*", serveStatic({ root: "./" }))
 
 export default app

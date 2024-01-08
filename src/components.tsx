@@ -9,7 +9,7 @@ export const Home = (props) => {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
       </head>
       <body>
-        <div class="container">
+        <div class="container text-rgray bg-rwhite">
           <SideBar />
           <div class="main-content">
             { props.children }
@@ -23,6 +23,7 @@ export const Home = (props) => {
 const SideBar = () => {
   return (
     <div class="sidebar">
+      <object data="/static/ryoo.svg" class="h-9 mr-3" />
       <div class="links">
         <a href="#work" class="sidebar-link">Works</a>
         <a href="#use" class="sidebar-link">Uses</a>
