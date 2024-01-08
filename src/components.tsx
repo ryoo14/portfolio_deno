@@ -38,6 +38,7 @@ export const ContentTemplate = (props: Contents) => {
           <p>{ content.title }</p>
           <p>{ content.thumbnail }</p>
           <p>{ content.detail }</p>
+          <p>{ content.url }</p>
         </div>
       ))}
     </div>
@@ -53,4 +54,5 @@ export type Content = {
   title: string;
   detail: string;
   thumbnail: string;
+  url: string;
 }
