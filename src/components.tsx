@@ -6,6 +6,7 @@ export const Home = (props) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/styles/main.css" />
         <link rel="stylesheet" href="/styles/tailwind.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
       </head>
       <body>
         <div class="container">
@@ -25,7 +26,10 @@ const SideBar = () => {
       <a href="#work" class="sidebar-link">Works</a>
       <a href="#use" class="sidebar-link">Uses</a>
       <a href="https://blog.ryoo.cc" target="_blank" rel="noreferrer" class="sidebar-link">Blog</a>
-      <a href="#link" class="sidebar-link">Links</a>
+      <a href="https://twitter.com/ryoo141" target="_blanck" rel="noreferrer"><i class="ti ti-brand-twitter" /></a>
+      <a href="https://github.com/ryoo14" target="_blanck" rel="noreferrer"><i class="ti ti-brand-github" /></a>
+      <a href="https://www.instagram.com/ryoo141" target="_blanck" rel="noreferrer"><i class="ti ti-brand-instagram" /></a>
+      <a href="https://atcoder.jp/users/ryoo14" target="_blanck" rel="noreferrer"><i class="ti ti-code" /></a>
     </div>
   )
 }

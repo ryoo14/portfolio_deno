@@ -52,42 +52,11 @@ const use: Contents = {
   ]
 }
 
-const link: Contents = {
-  type: "link",
-  contents: [
-    { 
-      title: "AtCoder",
-      detail: "https://atcoder.jp/users/ryoo14",
-      url: "",
-      thumbnail: "atcoder"
-    },
-    { 
-      title: "GitHub",
-      detail: "https://github.com/ryoo14",
-      url: "",
-      thumbnail: "github"
-    },
-    { 
-      title: "Instagram",
-      detail: "https://www.instagram.com/ryoo141",
-      url: "",
-      thumbnail: "instagram"
-    },
-    { 
-      title: "Twitter",
-      detail: "https://twitter.com/ryoo141",
-      url: "",
-      thumbnail: "twitter"
-    },
-  ]
-}
-
 app.get("/", (c) => {
   return c.html(
     <Home>
       <ContentTemplate { ...work } />
       <ContentTemplate { ...use } />
-      <ContentTemplate { ...link } />
     </Home>
   )
 })
