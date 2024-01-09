@@ -75,12 +75,12 @@ const use: Contents = {
 app.get("/", (c) => {
   return c.html(
     <Home>
-      <ContentTemplate { ...work } />
       <ContentTemplate { ...use } />
     </Home>
   )
 })
 
+      //<ContentTemplate { ...work } />
 app.get("/styles/*", serveStatic({ root: "./" }))
 app.get("/static/*", serveStatic({ root: "./" }))
 
