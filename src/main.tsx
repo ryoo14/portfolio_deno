@@ -9,21 +9,21 @@ const work: Contents = {
   contents: [
     { 
       title: "HoloCut",
-      overview: "",
+      overview: "Web App",
       detail: "Web App that collects clipped hololive videos.",
       thumbnail: "",
       url: "https://holocut.fan"
     },
     { 
-      title: "patty",
-      overview: "",
+      title: "Patty",
+      overview: "CLI Tool",
       detail: "A CLI Tool for managing git and working directories written in Deno.",
       thumbnail: "",
       url: "https://github.com/ryoo14/patty"
     },
     { 
-      title: "nautitwilight.vim",
-      overview: "",
+      title: "Nautitwilight.vim",
+      overview: "Vim Colorscheme",
       detail: "Nautical Twilight color scheme for Vim.",
       thumbnail: "",
       url: "https://github.com/ryoo14/nautitwilight.vim"
@@ -36,31 +36,31 @@ const use: Contents = {
   contents: [
     { 
       title: "Neo65",
-      overview: "",
+      overview: "Keyboard",
       detail: "Primary Keyboard",
       thumbnail: "",
-      url: "/neo65"
+      url: "https://qwertykeys.notion.site/Neo-65-6c8ae7895ec442dea809057c3dc5e113"
     },
     { 
       title: "Nuphy Air60 v2",
-      overview: "",
+      overview: "Keyboard",
       detail: "Keyboard for outside use",
       thumbnail: "",
-      url: "/air60v2"
+      url: "https://nuphy.com/collections/keyboards/products/air96-v2"
     },
     { 
       title: "Planck EZ",
-      overview: "",
+      overview: "Keyboard",
       detail: "40% cute keyboard for breather use",
       thumbnail: "",
-      url: "/planck"
+      url: "https://blog.zsa.io/2307-goodbye-planck-ez/"
     },
     {
       title: "M2 MacBook Air 13\"",
-      overview: "",
+      overview: "Laptop",
       detail: "Main machine",
       thumbnail: "",
-      url: ""
+      url: "https://www.apple.com/macbook-air-13-and-15-m2/"
     },
     {
       title: "",
