@@ -45,6 +45,7 @@ export const ContentTemplate = (props: Contents) => {
       { props.contents.map((content) => (
         <div class="content">
           <p>{ content.title }</p>
+          <p>{ content.overview }</p>
           <p>{ content.thumbnail }</p>
           <p>{ content.detail }</p>
           <p>{ content.url }</p>
@@ -61,6 +62,7 @@ export type Contents = {
 
 type Content = {
   title: string;
+  overview: string;
   detail: string;
   thumbnail: string;
   url: string;
