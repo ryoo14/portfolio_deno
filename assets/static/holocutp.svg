@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1024 1024" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="レイヤー-3">
+<path d="M505.074 18.3403L505.074 18.3403C781.216 18.3403 1005.07 240.128 1005.07 513.718L1005.07 522.963C1005.07 796.552 781.216 1018.34 505.074 1018.34L505.074 1018.34C228.932 1018.34 5.07399 796.552 5.07399 522.963L5.07399 513.718C5.07399 240.128 228.932 18.3403 505.074 18.3403Z" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="none"/>
+</g>
+<g id="レイヤー-2">
+<g opacity="1">
+<path d="M576.994 728.464L576.994 728.464C620.733 749.968 639.044 803.45 617.893 847.918L589.169 908.307C568.018 952.776 515.415 971.392 471.676 949.888L471.676 949.888C427.938 928.384 409.627 874.903 430.778 830.434L459.501 770.045C480.652 725.577 533.256 706.96 576.994 728.464Z" fill="none" opacity="1" stroke="#e08673" stroke-linecap="round" stroke-linejoin="round" stroke-width="64.6761"/>
+<path d="M579.776 126.097L568.063 686.551L579.776 126.097Z" fill="none" opacity="1" stroke="#e08673" stroke-linecap="round" stroke-linejoin="round" stroke-width="64.6761"/>
+<path d="M833.967 228.639L382.365 636.331L833.967 228.639Z" fill="none" opacity="1" stroke="#e08673" stroke-linecap="round" stroke-linejoin="round" stroke-width="64.6761"/>
+<path d="M335.629 637.72L335.629 637.72C379.368 659.224 397.679 712.705 376.528 757.174L347.805 817.563C326.654 862.031 274.05 880.648 230.312 859.144L230.312 859.144C186.573 837.64 168.262 784.158 189.413 739.69L218.137 679.301C239.288 634.832 291.891 616.216 335.629 637.72Z" fill="none" opacity="1" stroke="#e08673" stroke-linecap="round" stroke-linejoin="round" stroke-width="64.6761"/>
+</g>
+</g>
+<g id="レイヤー-1">
+<g opacity="1">
+<path d="M555.032 714.251L555.032 714.251C598.77 735.755 617.081 789.237 595.93 833.706L567.207 894.094C546.056 938.563 493.453 957.179 449.714 935.675L449.714 935.675C405.976 914.171 387.665 860.69 408.816 816.221L437.539 755.832C458.69 711.364 511.293 692.747 555.032 714.251Z" fill="none" opacity="1" stroke="#232c33" stroke-linecap="round" stroke-linejoin="round" stroke-width="64.6761"/>
+<path d="M557.814 111.884L546.101 672.338L557.814 111.884Z" fill="none" opacity="1" stroke="#232c33" stroke-linecap="round" stroke-linejoin="round" stroke-width="64.6761"/>
+<path d="M812.004 214.426L360.403 622.118L812.004 214.426Z" fill="none" opacity="1" stroke="#232c33" stroke-linecap="round" stroke-linejoin="round" stroke-width="64.6761"/>
+<path d="M313.667 623.507L313.667 623.507C357.406 645.011 375.717 698.492 354.566 742.961L325.842 803.35C304.691 847.818 252.088 866.435 208.349 844.931L208.349 844.931C164.611 823.427 146.3 769.945 167.451 725.477L196.174 665.088C217.325 620.619 269.929 602.003 313.667 623.507Z" fill="none" opacity="1" stroke="#232c33" stroke-linecap="round" stroke-linejoin="round" stroke-width="64.6761"/>
+</g>
+</g>
+</svg>
