@@ -4,7 +4,6 @@ import { Home, Contents, ContentTemplate} from "./components"
 
 const app = new Hono()
 
-//<img src="https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg" class="h-auto w-auto"/>
 const work: Contents = {
   type: "work",
   contents: [
