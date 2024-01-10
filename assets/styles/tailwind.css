@@ -590,8 +590,8 @@ video {
   margin-top: 0px;
 }
 
-.mt-48 {
-  margin-top: 12rem;
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .flex {
@@ -610,8 +610,8 @@ video {
   height: 3rem;
 }
 
-.h-36 {
-  height: 9rem;
+.h-32 {
+  height: 8rem;
 }
 
 .h-auto {
@@ -620,6 +620,14 @@ video {
 
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-3\/6 {
+  width: 50%;
+}
+
+.w-9\/12 {
+  width: 75%;
 }
 
 .w-auto {
@@ -650,12 +658,8 @@ video {
   justify-content: space-between;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-8 {
-  gap: 2rem;
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .bg-rwhite {
@@ -663,9 +667,9 @@ video {
   background-color: rgb(255 252 249 / var(--tw-bg-opacity));
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-light {
@@ -677,17 +681,27 @@ video {
   color: rgb(41 47 54 / var(--tw-text-opacity));
 }
 
+.hover\:text-rblue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(58 175 185 / var(--tw-text-opacity));
+}
+
+.hover\:text-rorange:hover {
+  --tw-text-opacity: 1;
+  color: rgb(253 136 80 / var(--tw-text-opacity));
+}
+
 @media (min-width: 1024px) {
   .lg\:absolute {
     position: absolute;
   }
 
-  .lg\:left-10 {
-    left: 2.5rem;
+  .lg\:left-16 {
+    left: 4rem;
   }
 
-  .lg\:left-44 {
-    left: 11rem;
+  .lg\:left-56 {
+    left: 14rem;
   }
 
   .lg\:mb-10 {
@@ -724,5 +738,9 @@ video {
 
   .lg\:flex-col {
     flex-direction: column;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 }
