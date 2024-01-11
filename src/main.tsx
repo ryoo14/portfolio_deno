@@ -38,7 +38,7 @@ const use: Contents = {
       title: "Neo65",
       overview: "Keyboard",
       detail: "Primary Keyboard",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/neo65.jpg",
       url: "https://qwertykeys.notion.site/Neo-65-6c8ae7895ec442dea809057c3dc5e113"
     },
     { 
