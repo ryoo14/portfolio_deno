@@ -11,7 +11,7 @@ export const Home = (props) => {
       <body>
         <div class="container text-rgray bg-rwhite flex flex-col justify-center items-center w-full lg:flex-row lg:block mt-0 lg:mt-20">
           <SideBar />
-          <div class="main-content w-9/12 lg:absolute mt-24 mb-10 lg:left-56 lg:mt-0">
+          <div class="main-content w-9/12 sm:w-11/12 lg:w-9/12 lg:absolute mt-24 mb-10 lg:left-56 lg:mt-0">
             { props.children }
           </div>
           <Footer />
@@ -24,7 +24,7 @@ export const Home = (props) => {
 
 const SideBar = () => {
   return (
-    <div class="sidebar flex flex-row justify-between items-center bg-rwhite/80 backdrop-blur-sm fixed top-0 lg:top-20 z-10 w-9/12 h-16 lg:flex-col lg:left-16 lg:w-24">
+    <div class="sidebar flex flex-row justify-between items-center bg-rwhite/80 backdrop-blur-sm fixed top-0 lg:top-20 z-10 w-9/12 h-16 sm:w-10/12 sm:h-28 lg:flex-col lg:left-16 lg:w-24">
       <object data="/static/ryoop.svg" class="h-12 lg:mb-20" />
       <div class="links flex flex-row w-3/6 lg:w-24 justify-between items-center lg:flex-col">
         <a href="#" class="sidebar-link hover:text-rorange lg:mb-10" data-target="work">Works</a>
@@ -67,7 +67,7 @@ type Content = {
 const Footer = () => {
   const year = (new Date()).getFullYear()
   return (
-    <div class="footer flex justify-between items-center w-9/12 bg-rwhite h-16 lg:flex-col lg:left-16 lg:w-24 lg:top-3/4 lg:fixed lg:z-10">
+    <div class="footer flex justify-between items-center w-9/12 bg-rwhite h-16 lg:flex-col lg:left-16 sm:w-11/12 lg:w-24 lg:top-[550px] lg:fixed lg:z-10">
       <div class="sns flex flex-row text-2xl">
         <a href="https://twitter.com/ryoo141" target="_blanck" rel="noopner noreferrer"><i class="ti ti-brand-twitter hover:text-rblue" /></a>
         <a href="https://github.com/ryoo14" target="_blanck" rel="noopner noreferrer"><i class="ti ti-brand-github hover:text-rblue" /></a>
