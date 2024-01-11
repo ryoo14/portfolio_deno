@@ -646,8 +646,8 @@ video {
   width: 100%;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
+.w-4\/6 {
+  width: 66.666667%;
 }
 
 .grid-cols-1 {
@@ -730,6 +730,10 @@ video {
     width: 91.666667%;
   }
 
+  .sm\:w-3\/6 {
+    width: 50%;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -786,10 +790,6 @@ video {
 
   .lg\:w-24 {
     width: 6rem;
-  }
-
-  .lg\:w-11\/12 {
-    width: 91.666667%;
   }
 
   .lg\:w-9\/12 {
