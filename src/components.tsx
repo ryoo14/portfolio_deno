@@ -42,7 +42,7 @@ const SideBar = () => {
 
 export const ContentTemplate = (props: Contents) => {
   return (
-    <div id={ props.type } class={ "ccc fade-in grid-cols-2 gap-6 lg:grid-cols-3 lg:gap-8" + (props.type === "work" ? " visible" : "") } style={ props.type === "work" ? "display: grid" : "display: none" }>
+    <div id={ props.type } class={ "ccc fade-in grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 2xl:grid-cols-4 2xl:gap-10" + (props.type === "work" ? " visible" : "") } style={ props.type === "work" ? "display: grid" : "display: none" }>
       { props.contents.map((content) => (
         <div class="content">
           <img src={ content.thumbnail } class="h-auto w-auto"/>
