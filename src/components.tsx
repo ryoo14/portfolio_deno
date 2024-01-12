@@ -4,6 +4,7 @@ export const Home = (props) => {
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#fffcf9" />
         <link rel="stylesheet" href="/styles/main.css" />
         <link rel="stylesheet" href="/styles/tailwind.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
@@ -24,7 +25,7 @@ export const Home = (props) => {
 
 const SideBar = () => {
   return (
-    <div class="sidebar flex flex-row justify-between items-center bg-rwhite/80 backdrop-blur-sm fixed top-0 lg:top-20 z-10 w-9/12 h-16 sm:w-11/12 sm:h-28 lg:flex-col lg:left-16 lg:w-24">
+    <div class="sidebar flex flex-row justify-between items-center bg-rwhite/80 backdrop-blur-sm fixed top-0 lg:top-20 z-10 w-10/12 h-16 sm:w-11/12 sm:h-28 lg:flex-col lg:left-16 lg:w-24">
       <object data="/static/ryoop.svg" class="h-12 lg:mb-20" />
       <div class="links flex flex-row w-4/6 sm:w-3/6 lg:w-24 justify-between items-center lg:flex-col">
         <a href="#" class="sidebar-link hover:text-rorange lg:mb-10" data-target="work">Works</a>
