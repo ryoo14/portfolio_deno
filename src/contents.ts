@@ -97,5 +97,12 @@ export const use: Contents = {
       thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
       url: "https://fujifilm-x.com/ja-jp/products/cameras/x-e4/"
     },
+    {
+      title: "Aer Sling Bag 3",
+      overview: "Bag",
+      detail: "Daily use",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
+      url: "https://aersf.jp/products/detail/90"
+    },
   ]
 }
