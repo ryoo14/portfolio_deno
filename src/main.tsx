@@ -17,6 +17,7 @@ const Home = (props) => {
         <div class="container text-rgray bg-rwhite flex flex-col justify-start items-center w-full lg:flex-row lg:block mt-0 lg:mt-20">
           <SideBar />
           <div class="main-content w-9/12 sm:w-11/12 lg:w-9/12 lg:absolute mt-24 sm:mt-36 mb-10 lg:left-56 lg:mt-0">
+            <About />
             { props.children }
           </div>
           <Footer />
@@ -41,23 +42,6 @@ const SideBar = () => {
   )
 }
 
-const ContentTemplate = (props: Contents) => {
-  return (
-    <div id={ props.type } class="ccc fade-in grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 2xl:grid-cols-4 2xl:gap-10" style="display: none">
-      { props.contents.map((content) => (
-        <div class="content">
-          <img src={ content.thumbnail } class="h-auto w-auto"/>
-          <div class="content-overview flex flex-col">
-            <p>{ content.title }</p>
-            <p class="font-light">{ content.overview }</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-
 const About = () => {
   return (
     <div id="about" class="ccc fade-in visible grid-cols-1 w-full break-words" style="display: grid;">
@@ -79,7 +63,7 @@ const About = () => {
         <li>Tinkering with mechanical keyboards</li>
       </ul>
       <h2 class="text-2xl mb-2">
-        My 🧳
+        My 📚
       </h2>
       <ul class="text-lg mb-6 list-none">
         <li>Linux Server Setup, Operation</li>
@@ -90,6 +74,23 @@ const About = () => {
     </div>
   )
 }
+
+const ContentTemplate = (props: Contents) => {
+  return (
+    <div id={ props.type } class="ccc fade-in grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 2xl:grid-cols-4 2xl:gap-10" style="display: none">
+      { props.contents.map((content) => (
+        <div class="content">
+          <img src={ content.thumbnail } class="h-auto w-auto"/>
+          <div class="content-overview flex flex-col">
+            <p>{ content.title }</p>
+            <p class="font-light">{ content.overview }</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
 
 const Footer = () => {
   const year = (new Date()).getFullYear()
@@ -108,13 +109,11 @@ const Footer = () => {
   )
 }
 
-
 const app = new Hono()
 
 app.get("/", (c) => {
   return c.html(
     <Home>
-      <About />
       <ContentTemplate { ...work } />
       <ContentTemplate { ...use } />
     </Home>
