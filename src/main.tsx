@@ -48,7 +48,7 @@ const About = () => {
       <h2 class="text-2xl mb-2">
         I'm ryoo!
       </h2>
-      <p class="text-lg mb-2">
+      <p class="text-lg">
         Welcome to my portfolio site.
       </p>
       <p class="text-lg mb-6">
@@ -57,7 +57,7 @@ const About = () => {
       <h2 class="text-2xl mb-2">
         I ❤️
       </h2>
-      <ul class="text-lg mb-6 list-none">
+      <ul class="text-lg mb-6 list-[square] list-inside">
         <li>Snap a pic</li>
         <li>Coding trivial apps</li>
         <li>Tinkering with mechanical keyboards</li>
@@ -65,7 +65,7 @@ const About = () => {
       <h2 class="text-2xl mb-2">
         My 📚
       </h2>
-      <ul class="text-lg mb-6 list-none">
+      <ul class="text-lg mb-6 list-[square] list-inside">
         <li>Linux Server Setup, Operation</li>
         <li>TypeScript</li>
         <li>Shell Script</li>
