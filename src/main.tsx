@@ -44,7 +44,7 @@ const SideBar = () => {
 
 const About = () => {
   return (
-    <div id="about" class="ccc fade-in visible grid-cols-1 w-full break-words" style="display: grid;">
+    <div id="about" class="ccc fade-in grid-cols-1 w-full break-words" style="display: grid;">
       <h2 class="text-2xl mb-2">
         I'm ryoo!
       </h2>

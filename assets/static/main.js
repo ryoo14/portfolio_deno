@@ -1,5 +1,10 @@
+window.addEventListener('load', () => { 
+  const about = document.getElementById("about");
+  about.classList.add("visible");
+});
+
 document.querySelectorAll('.sidebar-link').forEach(link => {
-  link.addEventListener('click', function(e) {
+  link.addEventListener('click', function (e) {
     e.preventDefault();
 
     document.querySelectorAll('.ccc').forEach(c => {
