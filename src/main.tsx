@@ -58,15 +58,15 @@ const About = () => {
         I ❤️
       </h2>
       <ul class="text-lg mb-6 list-[square] list-inside">
-        <li>Snap a pic</li>
-        <li>Coding trivial apps</li>
-        <li>Tinkering with mechanical keyboards</li>
+        <li>Photography</li>
+        <li>Coding Small Apps</li>
+        <li>Tinkering with Mechanical Keyboards</li>
       </ul>
       <h2 class="text-2xl mb-2">
         My 📚
       </h2>
       <ul class="text-lg mb-6 list-[square] list-inside">
-        <li>Linux Server Setup, Operation</li>
+        <li>Linux Server: Setup and Operation</li>
         <li>TypeScript</li>
         <li>Shell Script</li>
         <li>Ruby</li>

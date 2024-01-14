@@ -32,7 +32,7 @@ export const work: Contents = {
       title: "Nautitwilight.vim",
       overview: "Vim Colorscheme",
       detail: "Nautical Twilight color scheme for Vim.",
-      thumbnail: "/static/ryoop.svg",
+      thumbnail: "/static/nautilightp.svg",
       url: "https://github.com/ryoo14/nautitwilight.vim"
     },
   ]
