@@ -3,7 +3,7 @@
 <!-- Created with Vectornator (http://vectornator.io/) -->
 <svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 500 500" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<linearGradient gradientTransform="matrix(0.9 1.0316 -0.9 1.0316 250 -207.9)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="123.811" x2="374.142" y1="189.064" y2="264.507">
+<linearGradient gradientTransform="matrix(0.9 0.9 -0.9 0.9 250 -200)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="125" x2="375" y1="250" y2="250">
 <stop offset="0" stop-color="#292933"/>
 <stop offset="0.0729167" stop-color="#403f4a"/>
 <stop offset="0.075" stop-color="#403f4a"/>
@@ -23,20 +23,21 @@
 <stop offset="1" stop-color="#f8996d"/>
 <stop offset="1" stop-color="#f8996d"/>
 </linearGradient>
-<linearGradient gradientTransform="matrix(0.9 0.9 -0.9 0.9 250 -200)" gradientUnits="userSpaceOnUse" id="LinearGradient_3" x1="125" x2="375" y1="250" y2="250">
+<linearGradient gradientTransform="matrix(1.14943 0 0 1.26582 -39.954 -90.8354)" gradientUnits="userSpaceOnUse" id="LinearGradient_3" x1="80.7973" x2="411.356" y1="115.85" y2="417.358">
 <stop offset="0" stop-color="#292933"/>
 <stop offset="0.0729167" stop-color="#403f4a"/>
 <stop offset="0.075" stop-color="#403f4a"/>
-<stop offset="0.25" stop-color="#4b78a0"/>
-<stop offset="0.622917" stop-color="#7eacb9"/>
-<stop offset="0.829167" stop-color="#f6d2b6"/>
-<stop offset="1" stop-color="#f8996d"/>
-<stop offset="1" stop-color="#f8996d"/>
+<stop offset="0.308333" stop-color="#4b78a0"/>
+<stop offset="0.541667" stop-color="#7eacb9"/>
+<stop offset="0.779167" stop-color="#f6d2b6"/>
+<stop offset="0.941667" stop-color="#f8996d"/>
+<stop offset="0.95" stop-color="#f8996d"/>
 </linearGradient>
 </defs>
 <g id="レイヤー-1">
-<path d="M148.973 450L25 307.9L250 50L475 307.9L351.314 449.672" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="none"/>
-<path d="M250 475L148.973 373.973" fill="url(#LinearGradient_2)" fill-rule="nonzero" opacity="1" stroke="none"/>
-<path d="M351.314 373.686L250 475" fill="url(#LinearGradient_3)" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M250 475L148.973 373.973" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M351.314 373.686L250 475" fill="url(#LinearGradient_2)" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M52 130.442C52 89.329 85.329 56 126.442 56L377.558 56C418.671 56 452 89.329 452 130.442L452 381.558C452 422.671 418.671 456 377.558 456L126.442 456C85.329 456 52 422.671 52 381.558L52 130.442Z" fill="url(#LinearGradient_3)" fill-rule="nonzero" opacity="1" stroke="#292933" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.144241"/>
 </g>
+<g id="レイヤー-2"/>
 </svg>
