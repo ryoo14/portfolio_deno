@@ -25,7 +25,7 @@ export const work: Contents = {
       title: "Patty",
       overview: "CLI Tool",
       detail: "A CLI Tool for managing git and working directories written in Deno.",
-      thumbnail: "/static/ryoop.svg",
+      thumbnail: "/static/pattyp.svg",
       url: "https://github.com/ryoo14/patty"
     },
     { 
