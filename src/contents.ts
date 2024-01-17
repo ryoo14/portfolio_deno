@@ -52,28 +52,28 @@ export const use: Contents = {
       title: "Nuphy Air60 v2",
       overview: "Keyboard",
       detail: "Keyboard for outside use.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/air60v2.jpg",
       url: "https://nuphy.com/collections/keyboards/products/air60-v2"
     },
     { 
       title: "Planck EZ",
       overview: "Keyboard",
       detail: "40% cute keyboard for breather use.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/planckez.jpg",
       url: "https://blog.zsa.io/2307-goodbye-planck-ez/"
     },
     {
       title: "M2 MacBook Air 13\"",
       overview: "Laptop",
       detail: "Main machine.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/mba.jpg",
       url: "https://www.apple.com/macbook-air-13-and-15-m2/"
     },
     {
       title: "iPad Air4 & iPad mini6",
       overview: "Tablet",
       detail: "Photo Editing and Content Consumption.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/ipads.jpg",
       url: "https://www.apple.com/ipad/"
     },
     {
@@ -87,14 +87,14 @@ export const use: Contents = {
       title: "HOKA Clifton 9",
       overview: "Shoes",
       detail: "Buoyancy makes everyday running fun.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/clifton9.jpg",
       url: "https://www.hoka.com/jp/clifton-9/1127895.html?dwvar_1127895_color=VRTL"
     },
     {
       title: "Fujifilm X-E4",
       overview: "Camera",
       detail: "Snap a pic.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/xe4.jpg",
       url: "https://fujifilm-x.com/ja-jp/products/cameras/x-e4/"
     },
     {
