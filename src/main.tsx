@@ -83,7 +83,7 @@ const ContentTemplate = (props: Contents) => {
           <img src={ content.thumbnail } class="h-auto w-auto" />
           <div class="content-overview flex flex-col">
             <p>{ content.title }</p>
-            <p class="font-light">{ content.overview }</p>
+            <p class="text-gray-400">{ content.overview }</p>
           </div>
         </div>
       ))}
