@@ -80,7 +80,7 @@ export const use: Contents = {
       title: "Vim",
       overview: "Editor",
       detail: "Note Writing and Coding.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/vim.jpg",
       url: "https://www.vim.org"
     },
     {
