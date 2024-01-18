@@ -35,6 +35,13 @@ export const work: Contents = {
       thumbnail: "/static/nautilightp.svg",
       url: "https://github.com/ryoo14/nautitwilight.vim"
     },
+    { 
+      title: "Portfolio",
+      overview: "Web App",
+      detail: "My Portfolio",
+      thumbnail: "/static/portfoliop.svg",
+      url: "https://ryoo.cc"
+    },
   ]
 }
 
