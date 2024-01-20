@@ -31,7 +31,7 @@ const Home = (props) => {
 const SideBar = () => {
   return (
     <div class="sidebar flex flex-row justify-between items-center bg-rwhite/80 backdrop-blur-sm fixed top-0 lg:top-20 z-10 w-10/12 h-16 sm:w-11/12 sm:h-20 lg:h-28 lg:flex-col lg:left-16 lg:w-24">
-      <object data="/static/ryoop.svg" class="h-12 lg:mb-20" />
+      <object data="/static/portfoliop.svg" class="h-12 lg:mb-20" />
       <div class="links flex flex-row w-4/6 sm:w-3/6 lg:w-24 justify-between items-center lg:flex-col">
         <a href="#" class="sidebar-link hover:text-rorange lg:mb-10" data-target="about">About</a>
         <a href="#" class="sidebar-link hover:text-rorange lg:mb-10" data-target="work">Works</a>
@@ -45,9 +45,10 @@ const SideBar = () => {
 const About = () => {
   return (
     <div id="about" class="ccc fade-in grid-cols-1 w-full break-words" style="display: grid;">
-      <h2 class="text-2xl mb-2">
-        I'm ryoo!
-      </h2>
+      <div class="flex h-12 items-center">
+        <h2 class="text-2xl mr-2">I'm ryoo!</h2>
+        <object data="/static/ryoop.svg" class="h-12" />
+      </div>
       <p class="text-lg">
         Welcome to my portfolio site.
       </p>
