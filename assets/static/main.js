@@ -1,4 +1,4 @@
-window.addEventListener('load', () => { 
+window.addEventListener('DOMContentLoaded', () => { 
   const about = document.getElementById("about");
   about.classList.add("visible");
 });
