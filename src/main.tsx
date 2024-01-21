@@ -14,7 +14,7 @@ const Home = (props) => {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
         <link rel="icon" href="/static/portfoliop.svg" type="image/svg+xml" />
       </head>
-      <body class="text-rgray bg-rwhite dark:text-rwhite dark:bg-rgray">
+      <body>
         <div class="container flex flex-col justify-start items-center w-full lg:flex-row lg:block mt-0 lg:mt-20">
           <SideBar />
           <div class="main-content w-9/12 sm:w-11/12 lg:w-9/12 lg:absolute mt-24 sm:mt-32 mb-10 lg:left-56 lg:mt-0">

@@ -1,3 +1,22 @@
+function setColor() {
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+  const body = document.body;
+  const darkColor = "#292f36";
+  const lightColor = "#fffcf9";
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    themeColorMeta.setAttribute("content", darkColor);
+    body.style.color = lightColor;
+    body.style.backgroundColor = darkColor;
+  } else {
+    themeColorMeta.setAttribute("content", lightColor);
+    body.style.color = darkColor;
+    body.style.backgroundColor = lightColor;
+  }
+}
+
+setColor();
+window.matchMedia('(prefers-color-scheme: dark)').addListener(setColor);
+
 window.addEventListener('DOMContentLoaded', () => { 
   const about = document.getElementById("about");
   about.classList.add("visible");
@@ -21,3 +40,4 @@ document.querySelectorAll('.sidebar-link').forEach(link => {
     }, 10);
   });
 });
+
