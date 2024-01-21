@@ -852,3 +852,15 @@ video {
     gap: 2.5rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-rgray {
+    --tw-bg-opacity: 1;
+    background-color: rgb(41 47 54 / var(--tw-bg-opacity));
+  }
+
+  .dark\:text-rwhite {
+    --tw-text-opacity: 1;
+    color: rgb(255 252 249 / var(--tw-text-opacity));
+  }
+}
