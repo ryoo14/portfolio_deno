@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 500 500" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 500 500" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs/>
-<g id="レイヤー-1" vectornator:layerName="レイヤー 1">
-<path d="M304.922 65.1554L304.922 126.796L366.563 126.796L304.922 65.1554Z" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282" vectornator:layerName="曲線 9"/>
-<path d="M120 65.1554L120 435L366.563 435L366.563 126.796L304.922 126.796L304.922 65.1554L120 65.1554Z" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282" vectornator:layerName="曲線 8"/>
-<path d="M181.641 157.617L304.922 157.617L181.641 157.617Z" fill="none" opacity="1" stroke="#292f36" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282" vectornator:layerName="曲線 3"/>
-<path d="M181.641 219.257L304.922 219.257L181.641 219.257Z" fill="none" opacity="1" stroke="#fd8550" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282" vectornator:layerName="曲線 4"/>
-<path d="M181.641 280.898L304.922 280.898L181.641 280.898Z" fill="none" opacity="1" stroke="#292f36" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282" vectornator:layerName="曲線 5"/>
-<path d="M181.641 342.539L304.922 342.539L181.641 342.539Z" fill="none" opacity="1" stroke="#3aafb9" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282" vectornator:layerName="曲線 6"/>
-<path d="M181.641 404.18" fill="none" opacity="1" stroke="#292f36" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282" vectornator:layerName="曲線 7"/>
-<path d="M309.346 379.892L309.346 388.494L317.948 397.096L403.967 242.263L395.365 233.661" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="曲線 15"/>
-<path d="M404.763 219.151L407.623 214.677L410.483 210.203C410.483 210.203 414.83 211.506 420.069 214.116C425.307 216.727 431.437 220.645 435 225.875L384.081 305.532L333.162 385.189C333.162 385.189 332.575 384.327 331.326 382.974C330.077 381.621 328.166 379.778 325.519 377.816" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.84175" vectornator:layerName="曲線 10"/>
-<path d="M315.366 371.977C314.344 371.53 313.274 371.097 312.154 370.686C311.034 370.274 309.865 369.883 308.645 369.517L354.174 298.292L397.421 230.637" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.84175" vectornator:layerName="曲線 11"/>
-<path d="M306.03 373.774" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.16111" vectornator:layerName="曲線 12"/>
-<path d="M308.645 369.517L305.633 387.737L302.62 405.957L317.891 395.573L333.162 385.189" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.84175" vectornator:layerName="曲線 13"/>
-<path d="M317.948 388.494L309.346 379.892" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="曲線 14"/>
+<g id="レイヤー-1">
+<path d="M304.922 80.1407L304.922 135.951L366.563 135.951L304.922 80.1407Z" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282"/>
+<path d="M120 80L120 420L366.563 420L366.563 136.667L304.922 136.667L304.922 80L120 80Z" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282"/>
+<path d="M181.641 157.617L304.922 157.617L181.641 157.617Z" fill="none" opacity="1" stroke="#292f36" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282"/>
+<path d="M181.641 219.257L304.922 219.257L181.641 219.257Z" fill="none" opacity="1" stroke="#fd8550" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282"/>
+<path d="M181.641 280.898L304.922 280.898L181.641 280.898Z" fill="none" opacity="1" stroke="#292f36" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282"/>
+<path d="M181.641 342.539L304.922 342.539L181.641 342.539Z" fill="none" opacity="1" stroke="#3aafb9" stroke-linecap="butt" stroke-linejoin="round" stroke-width="12.3282"/>
+<path d="M309.346 379.892L309.346 388.494L317.948 397.096L403.967 242.263L395.365 233.661" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M404.763 219.151L407.623 214.677L410.483 210.203C410.483 210.203 414.83 211.506 420.069 214.116C425.307 216.727 431.437 220.645 435 225.875L384.081 305.532L333.162 385.189C333.162 385.189 332.575 384.327 331.326 382.974C330.077 381.621 328.166 379.778 325.519 377.816" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.84175"/>
+<path d="M315.366 371.977C314.344 371.53 313.274 371.097 312.154 370.686C311.034 370.274 309.865 369.883 308.645 369.517L354.174 298.292L397.421 230.637" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.84175"/>
+<path d="M308.645 369.517L305.633 387.737L302.62 405.957L317.891 395.573L333.162 385.189" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="#292f36" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.84175"/>
+<path d="M309.346 379.892L317.948 388.494" fill="#fffcf9" fill-rule="nonzero" opacity="1" stroke="none"/>
 </g>
 </svg>
