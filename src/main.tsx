@@ -67,7 +67,7 @@ const About = () => {
       <ul class="text-lg mb-6 list-[square] list-inside">
         <li>Linux Server: Setup and Operation</li>
         <li>TypeScript</li>
-        <li>Shell Script</li>
+        <li>Shell Scripting</li>
         <li>Ruby</li>
       </ul>
     </div>
