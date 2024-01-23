@@ -698,15 +698,6 @@ video {
   overflow-wrap: break-word;
 }
 
-.bg-rwhite {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 252 249 / var(--tw-bg-opacity));
-}
-
-.bg-rwhite\/80 {
-  background-color: rgb(255 252 249 / 0.8);
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -720,11 +711,6 @@ video {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-rgray {
-  --tw-text-opacity: 1;
-  color: rgb(41 47 54 / var(--tw-text-opacity));
 }
 
 .backdrop-blur-sm {
@@ -850,17 +836,5 @@ video {
 
   .\32xl\:gap-10 {
     gap: 2.5rem;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-rgray {
-    --tw-bg-opacity: 1;
-    background-color: rgb(41 47 54 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-rwhite {
-    --tw-text-opacity: 1;
-    color: rgb(255 252 249 / var(--tw-text-opacity));
   }
 }
