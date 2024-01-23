@@ -108,7 +108,7 @@ export const use: Contents = {
       title: "Aer Sling Bag 3",
       overview: "Bag",
       detail: "Daily use",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/autumn_leaves.jpg",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/aer.jpg",
       url: "https://aersf.jp/products/detail/90"
     },
   ]
