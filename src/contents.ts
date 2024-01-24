@@ -84,11 +84,11 @@ export const use: Contents = {
       url: "https://www.apple.com/ipad/"
     },
     {
-      title: "Vim",
-      overview: "Editor",
-      detail: "Note Writing and Coding.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/vim.jpg",
-      url: "https://www.vim.org"
+      title: "Fujifilm X-E4",
+      overview: "Camera",
+      detail: "Snap a pic.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/xe4.jpg",
+      url: "https://fujifilm-x.com/ja-jp/products/cameras/x-e4/"
     },
     {
       title: "HOKA Clifton 9",
@@ -98,18 +98,18 @@ export const use: Contents = {
       url: "https://www.hoka.com/jp/clifton-9/1127895.html?dwvar_1127895_color=VRTL"
     },
     {
-      title: "Fujifilm X-E4",
-      overview: "Camera",
-      detail: "Snap a pic.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/xe4.jpg",
-      url: "https://fujifilm-x.com/ja-jp/products/cameras/x-e4/"
-    },
-    {
       title: "Aer Sling Bag 3",
       overview: "Bag",
       detail: "Daily use",
       thumbnail: "https://d3toh8on7lf5va.cloudfront.net/aer.jpg",
       url: "https://aersf.jp/products/detail/90"
+    },
+    {
+      title: "Vim",
+      overview: "Editor",
+      detail: "Note Writing and Coding.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/vim.jpg",
+      url: "https://www.vim.org"
     },
   ]
 }
