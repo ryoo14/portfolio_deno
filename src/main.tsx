@@ -81,11 +81,13 @@ const ContentTemplate = (props: Contents) => {
     <div id={props.type} class="ccc fade-in grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 2xl:grid-cols-4 2xl:gap-10" style="display: none">
       {props.contents.map((content) => (
         <div class="content">
-          <img src={content.thumbnail} class="h-auto w-auto" />
-          <div class="content-overview flex flex-col">
-            <p>{content.title}</p>
-            <p class="text-gray-400">{content.overview}</p>
-          </div>
+          <a href={content.url} target="_blanck" rel="noopener noreferrer">
+            <img src={content.thumbnail} class="h-auto w-auto" />
+            <div class="content-overview flex flex-col">
+              <p>{content.title}</p>
+              <p class="text-gray-400">{content.overview}</p>
+            </div>
+          </a>
         </div>
       ))}
     </div>
