@@ -70,6 +70,20 @@ export const use: Contents = {
       url: "https://blog.zsa.io/2307-goodbye-planck-ez/",
     },
     {
+      title: "Noraneko42A",
+      overview: "Keyboard",
+      detail: "My first Alice keyboard.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/noraneko42a.jpg",
+      url: "https://booth.pm/ja/items/5374158",
+    },
+    {
+      title: "Quarkeys Z40",
+      overview: "Keyboard",
+      detail: "My Endgame Keyboard for now.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/z40.jpg",
+      url: "https://ja.quarkeys.com/home",
+    },
+    {
       title: 'M2 MacBook Air 13"',
       overview: "Laptop",
       detail: "Main machine.",
