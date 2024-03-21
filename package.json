@@ -5,12 +5,12 @@
     "fmt": "prettier --write src"
   },
   "dependencies": {
-    "hono": "^3.12.0"
+    "hono": "^3.12.12"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20231218.0",
-    "prettier": "^3.2.4",
+    "@cloudflare/workers-types": "^4.20240320.1",
+    "prettier": "^3.2.5",
     "tailwindcss": "^3.4.1",
-    "wrangler": "^3.23.0"
+    "wrangler": "^3.36.0"
   }
 }
