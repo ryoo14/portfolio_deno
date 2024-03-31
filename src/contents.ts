@@ -80,7 +80,7 @@ export const use: Contents = {
       title: "Quarkeys Z40",
       overview: "Keyboard",
       detail: "My Endgame Keyboard for now.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/z40.jpg",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/z40-blanck.jpg",
       url: "https://ja.quarkeys.com/home",
     },
     {
