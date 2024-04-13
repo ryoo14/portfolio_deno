@@ -1,6 +1,8 @@
 import { Hono } from "hono"
 import { serveStatic } from "hono/cloudflare-workers"
 import { Contents, work, use } from "./contents"
+// @ts-ignore
+import manifest from '__STATIC_CONTENT_MANIFEST'
 
 const Home = (props) => {
   return (
@@ -128,7 +130,7 @@ app.get("/", (c) => {
   )
 })
 
-app.get("/styles/*", serveStatic({ root: "./" }))
-app.get("/static/*", serveStatic({ root: "./" }))
+app.get("/styles/*", serveStatic({ root: "./", manifest: manifest }))
+app.get("/static/*", serveStatic({ root: "./", manifest: manifest }))
 
 export default app
