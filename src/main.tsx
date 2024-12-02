@@ -103,6 +103,9 @@ const Footer = () => {
         <a href="https://twitter.com/ryoo141" target="_blanck" rel="noopener noreferrer">
           <i class="ti ti-brand-twitter hover:text-rblue" />
         </a>
+        <a href="https://bsky.app/profile/ryoo.cc" target="_blanck" rel="noopener noreferrer">
+          <i class="ti ti-brand-bluesky hover:text-rblue" />
+        </a>
         <a href="https://github.com/ryoo14" target="_blanck" rel="noopener noreferrer">
           <i class="ti ti-brand-github hover:text-rblue" />
         </a>
