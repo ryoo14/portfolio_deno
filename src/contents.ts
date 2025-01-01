@@ -91,6 +91,13 @@ export const use: Contents = {
       url: "https://chosfox.com/products/chosfox-x-masro-geonix48",
     },
     {
+      title: "Corne V4 Chocolate",
+      overview: "Keyboard",
+      detail: "My first split keyboard.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/corne2.jpg",
+      url: "https://shop.yushakobo.jp/products/8962",
+    },
+    {
       title: "CSTC40",
       overview: "Keyboard",
       detail: "My Endgame Keyboard for now.",
