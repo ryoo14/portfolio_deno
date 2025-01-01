@@ -15,6 +15,7 @@ const Home = (props) => {
         <link rel="stylesheet" href="/styles/tailwind.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
         <link rel="icon" href="/static/portfoliop.svg" type="image/svg+xml" />
+        <title>{props.title}</title>
       </head>
       <body>
         <div class="container flex flex-col justify-start items-center w-full lg:flex-row lg:block mt-0 lg:mt-20">
@@ -125,7 +126,7 @@ const app = new Hono()
 
 app.get("/", (c) => {
   return c.html(
-    <Home>
+    <Home title="ryoo.cc">
       <About />
     </Home>,
   )
@@ -133,7 +134,7 @@ app.get("/", (c) => {
 
 app.get("/about", (c) => {
   return c.html(
-    <Home>
+    <Home title="About | ryoo.cc">
       <About />
     </Home>,
   )
@@ -141,7 +142,7 @@ app.get("/about", (c) => {
 
 app.get("/works", (c) => {
   return c.html(
-    <Home>
+    <Home title="Works | ryoo.cc">
       <ContentTemplate {...work} />
     </Home>,
   )
@@ -149,7 +150,7 @@ app.get("/works", (c) => {
 
 app.get("/uses", (c) => {
   return c.html(
-    <Home>
+    <Home title="Uses | ryoo.cc">
       <ContentTemplate {...use} />
     </Home>,
   )
