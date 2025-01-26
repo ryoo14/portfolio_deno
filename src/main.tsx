@@ -34,7 +34,7 @@ const Home = (props) => {
 const SideBar = () => {
   return (
     <div class="sidebar flex flex-row justify-between items-center backdrop-blur-sm fixed top-0 lg:top-20 z-10 w-10/12 h-16 sm:w-11/12 sm:h-20 lg:h-28 lg:flex-col lg:left-16 lg:w-24">
-      <object data="/static/portfoliop.svg" class="h-12 lg:mb-20" />
+      <object data="/static/ryoop.svg" class="h-12 lg:mb-20" />
       <div class="links flex flex-row w-4/6 sm:w-3/6 lg:w-24 justify-between items-center lg:flex-col">
         <a href="/" class="sidebar-link hover:text-rorange lg:mb-10" data-target="about">
           About
@@ -56,24 +56,11 @@ const SideBar = () => {
 const About = () => {
   return (
     <div id="about" class="fade-in grid-cols-1 w-full break-words" style="display: grid;">
-      <div class="flex h-12 items-center">
-        <h2 class="text-2xl mr-2">Hi! I'm ryoo!</h2>
-        <object data="/static/ryoop.svg" class="h-12" />
+      <div class="flex h-12 items-center mb-6">
+        <h2 class="text-2xl mr-2">I'm ryoo.</h2>
       </div>
-      <p class="text-lg mb-6">I work as an Infrastructure Engineer in Japan and develop applications as a hobby.</p>
-      <h2 class="text-2xl mb-2">I ❤️</h2>
-      <ul class="text-lg mb-6 list-[square] list-inside">
-        <li>Photography</li>
-        <li>Coding Small Apps</li>
-        <li>Tinkering with Mechanical Keyboards</li>
-      </ul>
-      <h2 class="text-2xl mb-2">My 📚</h2>
-      <ul class="text-lg mb-6 list-[square] list-inside">
-        <li>Linux Server: Setup and Operation</li>
-        <li>TypeScript</li>
-        <li>Shell Scripting</li>
-        <li>Ruby</li>
-      </ul>
+      <p class="text-lg mb-4">I work as an Infrastructure Engineer in Japan and develop applications as a hobby.</p>
+      <p class="text-lg">I love taking photos, creating small apps, and clicking and clacking mechanical keyboards.</p>
     </div>
   )
 }
