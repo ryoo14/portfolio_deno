@@ -1,0 +1,40 @@
+@theme {
+  --color-rorange: #fd8850;
+  --color-rblue: #3aafb9;
+  --color-rgray: #292f36;
+  --color-rwhite: #fffcf9;
+}
+
+#blog-entry h2 {
+  @apply text-2xl mt-6 mb-6;
+}
+
+#blog-entry h3 {
+  @apply text-lg mt-5 mb-3 hover:text-rorange;
+}
+
+#blog-entry h6 {
+  @apply text-xs text-gray-500;
+}
+
+#blog-entry p {
+  @apply text-sm mb-1 font-extralight;
+}
+
+#blog-entry ul {
+  @apply text-sm mb-1 font-extralight;
+}
+
+#blog-entry a {
+  @apply hover:text-rorange;
+}
+
+#blog-entry li {
+  @apply text-sm mb-1 list-disc list-inside;
+}
+
+#blog-entry ul {
+  @apply mb-3;
+}
+
+@import "tailwindcss"
