@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch main.tsx"
+  },
+  "imports": {
+    "@hono/hono": "jsr:@hono/hono@^4.6.19",
+    "gray-matter": "npm:gray-matter@^4.0.3",
+    "marked": "npm:marked@^15.0.6",
+    "tailwindcss": "npm:tailwindcss@^4.0.3"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "@hono/hono/jsx"
+  },
+  "nodeModulesDir": "auto"
+}
