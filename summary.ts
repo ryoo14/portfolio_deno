@@ -9,6 +9,7 @@ type FrontMatter = {
   publish_date: Date
   tags: string[]
   bsky_url?: string
+  draft?: boolean
 }
 
 // get the content of each file
@@ -21,23 +22,27 @@ posts.forEach((post) => {
   const title = data.title
   const publish_date = new Date(data.publish_date)
   const tags = data.tags
+  const draft = data.draft
   postsContent.push({
     name,
     title,
     publish_date,
     tags,
+    draft
   })
 })
 
 const postsSortedContent: FrontMatter[] = postsContent.sort((a, b) => b.publish_date.getTime() - a.publish_date.getTime())
 let html = ""
 postsSortedContent.forEach((post) => {
-  html += 
+  if (!post.draft) {
+    html += 
 `<a class="flex flex-row mb-8 items-baseline hover:text-rorange" href="/blog/${post.name.replace(/\.md$/, "")}">
   <p class="mr-8 min-w-[100px]">${post.publish_date.toISOString().split("T")[0]}</p>
   <p>${post.title}</p>
 </a>
 `
+  }
 })
 
 Deno.writeTextFileSync("./summary.html", html)
