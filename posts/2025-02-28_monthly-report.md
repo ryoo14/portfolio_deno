@@ -2,6 +2,7 @@
 title: Monthly Report Dec 2025
 publish_date: 2025-02-28
 tags: [monthly_report]
+draft: true
 ---
 
 2025年2月の生存報告。
