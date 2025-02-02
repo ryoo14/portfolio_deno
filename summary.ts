@@ -46,21 +46,3 @@ postsSortedContent.forEach((post) => {
 })
 
 Deno.writeTextFileSync("./summary.html", html)
-
-
-//<a class="flex flex-row mb-8 items-baseline hover:text-rorange" href="/blog/2021-06-30-monthly_contents">
-//  <p class="mr-8 min-w-[100px]">2025-01-01</p>
-//  <p>これはテスト記事なんだよね. そういうものなんだよね。けどそうじゃない場合もやっぱりあるよね</p>
-//</a>
-//<a class="flex flex-row mb-8 items-baseline hover:text-rorange" href="/blog/2022-12-31_year-end">
-//  <p class="mr-8 min-w-[100px]">2025-08-01</p>
-//  <p>これはテスト記事なんだよね. そういうものなんだよね。けどそうじゃない場合もやっぱりあるよね</p>
-//</a>
-//<a class="flex flex-row mb-8 items-baseline hover:text-rorange" href="/blog/2025-01-31_monthly-report">
-//  <p class="mr-8 min-w-[100px]">2025-07-01</p>
-//  <p>これはテスト記事なんだよね. そういうものなんだよね。けどそうじゃない場合もやっぱりあるよね</p>
-//</a>
-//<a class="flex flex-row mb-8 items-baseline hover:text-rorange" href="/blog/2024-12-29_bestbuy">
-//  <p class="mr-8 min-w-[100px]">2025-11-01</p>
-//  <p>これはテスト記事なんだよね. そういうものなんだよね。けどそうじゃない場合もやっぱりあるよね</p>
-//</a>
