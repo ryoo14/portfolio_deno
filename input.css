@@ -10,7 +10,11 @@
 }
 
 #blog-entry h3 {
-  @apply text-lg mt-7 mb-3 hover:text-rorange;
+  @apply text-lg mt-7 mb-3;
+}
+
+#blog-entry h3 a {
+  @apply hover:text-rorange;
 }
 
 #blog-entry h6 {

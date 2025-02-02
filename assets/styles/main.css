@@ -20,6 +20,14 @@ html, body {
   transform: translateY(0);
 }
 
+#blog-entry h3 {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  text-decoration-color: #fd8850;
+}
+
 #blog-entry p a {
   text-decoration: underline;
   text-decoration-style: dotted;
@@ -35,12 +43,3 @@ html, body {
   text-underline-offset: 2px;
   text-decoration-color: #3aafb9;
 }
-
-#blog-entry h3 {
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 3px;
-  text-decoration-color: #fd8850;
-}
-

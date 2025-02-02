@@ -391,6 +391,8 @@
   margin-bottom: calc(var(--spacing) * 3);
   font-size: var(--text-lg);
   line-height: var(--tw-leading, var(--text-lg--line-height));
+}
+#blog-entry h3 a {
   &:hover {
     @media (hover: hover) {
       color: var(--color-rorange);
