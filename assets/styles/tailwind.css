@@ -382,12 +382,12 @@
 }
 #blog-entry h2 {
   margin-top: calc(var(--spacing) * 6);
-  margin-bottom: calc(var(--spacing) * 6);
+  margin-bottom: calc(var(--spacing) * 4);
   font-size: var(--text-2xl);
   line-height: var(--tw-leading, var(--text-2xl--line-height));
 }
 #blog-entry h3 {
-  margin-top: calc(var(--spacing) * 5);
+  margin-top: calc(var(--spacing) * 7);
   margin-bottom: calc(var(--spacing) * 3);
   font-size: var(--text-lg);
   line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -422,10 +422,17 @@
   --tw-font-weight: var(--font-weight-extralight);
   font-weight: var(--font-weight-extralight);
 }
-#blog-entry a {
+#blog-entry p a {
   &:hover {
     @media (hover: hover) {
-      color: var(--color-rorange);
+      color: var(--color-rblue);
+    }
+  }
+}
+#blog-entry li a {
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-rblue);
     }
   }
 }

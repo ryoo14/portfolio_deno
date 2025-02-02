@@ -6,11 +6,11 @@
 }
 
 #blog-entry h2 {
-  @apply text-2xl mt-6 mb-6;
+  @apply text-2xl mt-6 mb-4;
 }
 
 #blog-entry h3 {
-  @apply text-lg mt-5 mb-3 hover:text-rorange;
+  @apply text-lg mt-7 mb-3 hover:text-rorange;
 }
 
 #blog-entry h6 {
@@ -29,8 +29,11 @@
   @apply text-sm mb-1 font-extralight;
 }
 
-#blog-entry a {
-  @apply hover:text-rorange;
+#blog-entry p a {
+  @apply hover:text-rblue;
+}
+#blog-entry li a {
+  @apply hover:text-rblue;
 }
 
 #blog-entry li {

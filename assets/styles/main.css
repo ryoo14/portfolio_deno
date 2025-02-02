@@ -25,6 +25,7 @@ html, body {
   text-decoration-style: dotted;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
+  text-decoration-color: #3aafb9;
 }
 
 #blog-entry li a {
@@ -32,5 +33,14 @@ html, body {
   text-decoration-style: dotted;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
+  text-decoration-color: #3aafb9;
+}
+
+#blog-entry h3 {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  text-decoration-color: #fd8850;
 }
 
