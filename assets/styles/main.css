@@ -19,3 +19,18 @@ html, body {
   opacity: 1;
   transform: translateY(0);
 }
+
+#blog-entry p a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+#blog-entry li a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+

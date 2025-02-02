@@ -1,8 +1,8 @@
-import { Hono } from "hono"
-import { serveStatic } from "hono/cloudflare-workers"
-import { Contents, work, use } from "./contents"
-// @ts-ignore
-import manifest from "__STATIC_CONTENT_MANIFEST"
+import { Hono } from "@hono/hono"
+import { serveStatic } from "@hono/hono/deno"
+import { Contents, work, use } from "./contents.ts"
+import matter from "gray-matter"
+import { marked } from "marked"
 
 const Home = (props) => {
   return (
@@ -20,7 +20,7 @@ const Home = (props) => {
       <body>
         <div class="container flex flex-col justify-start items-center w-full lg:flex-row lg:block mt-0 lg:mt-20">
           <SideBar />
-          <div class="main-content w-9/12 sm:w-11/12 lg:w-9/12 lg:absolute mt-24 sm:mt-32 mb-10 lg:left-56 lg:mt-0">
+          <div class="main-content w-10/12 sm:w-11/12 lg:w-9/12 lg:absolute mt-24 sm:mt-32 mb-10 lg:left-56 lg:mt-0">
             {props.children}
           </div>
           <Footer />
@@ -45,7 +45,7 @@ const SideBar = () => {
         <a href="/uses" class="sidebar-link hover:text-rorange lg:mb-10" data-target="use">
           Uses
         </a>
-        <a href="https://blog.ryoo.cc" target="_blank" rel="noopener noreferrer" class="sidebar-exlink hover:text-rorange lg:mb-10">
+        <a href="/blog" class="sidebar-link hover:text-rorange lg:mb-10" data-target="blog">
           Blog
         </a>
       </div>
@@ -83,10 +83,24 @@ const ContentTemplate = (props: Contents) => {
   )
 }
 
+const Blog = () => {
+  const blogEntries = Deno.readTextFileSync("./summary.html")
+  return (
+    <div id="blog" class="fade-in w-full break-words" style="display: grid;">
+      <div class="flex h-12 items-center mb-6">
+        <h2 class="text-2xl mr-2">Blog</h2>
+      </div>
+      <div id="blog-list" class="text-base">
+        <div dangerouslySetInnerHTML={{ __html: blogEntries }} />
+      </div>
+    </div>
+  )
+}
+
 const Footer = () => {
   const year = new Date().getFullYear()
   return (
-    <div class="footer flex justify-between items-center w-9/12 h-16 lg:flex-col lg:left-16 sm:w-11/12 lg:w-24 lg:top-[550px] lg:fixed lg:z-10">
+    <div class="footer flex justify-between items-center w-10/12 h-16 lg:flex-col lg:left-16 sm:w-11/12 lg:w-24 lg:top-[550px] lg:fixed lg:z-10">
       <div class="sns flex flex-row text-2xl">
         <a href="https://twitter.com/ryoo141" target="_blanck" rel="noopener noreferrer">
           <i class="ti ti-brand-twitter hover:text-rblue" />
@@ -143,7 +157,38 @@ app.get("/uses", (c) => {
   )
 })
 
-app.get("/styles/*", serveStatic({ root: "./", manifest: manifest }))
-app.get("/static/*", serveStatic({ root: "./", manifest: manifest }))
+app.get("/blog", (c) => {
+  return c.html(
+    <Home title="blog | ryoo.cc">
+      <Blog />
+    </Home>,
+  )
+})
 
-export default app
+app.get("/blog/:path", (c) => {
+  const blogFile = c.req.param("path")
+  const blogData = Deno.readTextFileSync(`./posts/${blogFile}.md`)
+  const blogObject = matter(blogData)
+  const frontMatter = blogObject.data
+  const frontMatterDate = new Date(frontMatter.publish_date).toISOString().split("T")[0]
+  const contentMd = blogObject.content
+  const contentHtml = marked(contentMd) as string
+  const innerHtml = { __html: contentHtml }
+  return c.html(
+    <Home title="blog | ryoo.cc">
+      <div id="blog-entry" class="fade-in">
+        <div class="front-matter mb-4">
+          <div class="text-3xl text-bold mb-4">{frontMatter.title}</div>
+          <div class="text-sm">{frontMatterDate}</div>
+          <div class="text-sm">{frontMatter.tags}</div>
+        </div>
+        <div dangerouslySetInnerHTML={innerHtml} />
+      </div>
+    </Home>,
+  )
+})
+
+app.get("/styles/*", serveStatic({ root: "./assets" }))
+app.get("/static/*", serveStatic({ root: "./assets" }))
+
+Deno.serve(app.fetch)
