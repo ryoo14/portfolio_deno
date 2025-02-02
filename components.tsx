@@ -11,6 +11,11 @@ export const Home = (props) => {
         <link rel="stylesheet" href="/styles/tailwind.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
         <link rel="icon" href="/static/portfoliop.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/base16/onedark.css" />
+        <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+        <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/vim.min.js"></script>
+
+<script>hljs.highlightAll();</script>
         <title>{props.title}</title>
       </head>
       <body>
