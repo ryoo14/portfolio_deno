@@ -125,6 +125,14 @@ const Footer = () => {
 
 const app = new Hono()
 
+app.notFound((c) => {
+  return c.html(
+    <Home title="404 | ryoo.cc">
+      <div class="fade-in">Not Found</div>
+    </Home>
+  , 404)
+})
+
 app.get("/", (c) => {
   return c.html(
     <Home title="ryoo.cc">
