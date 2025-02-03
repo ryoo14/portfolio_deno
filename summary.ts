@@ -37,7 +37,7 @@ let html = ""
 postsSortedContent.forEach((post) => {
   if (!post.draft) {
     html += 
-`<a class="flex flex-row mb-8 items-baseline hover:text-rorange" href="/blog/${post.name.replace(/\.md$/, "")}">
+`<a hx-get="/blog/${post.name.replace(/\.md$/, "")}" hx-target="#main-content" hx-push-url="true" class="flex flex-row mb-8 items-baseline hover:text-rorange" href="/blog/${post.name.replace(/\.md$/, "")}">
   <p class="mr-8 min-w-[100px]">${post.publish_date.toISOString().split("T")[0]}</p>
   <p>${post.title}</p>
 </a>
