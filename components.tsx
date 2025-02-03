@@ -15,7 +15,7 @@ export const Home = (props) => {
         <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
         <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/vim.min.js"></script>
 
-<script>hljs.highlightAll();</script>
+        <script>hljs.highlightAll();</script>
         <title>{props.title}</title>
       </head>
       <body>
