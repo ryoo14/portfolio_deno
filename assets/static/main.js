@@ -23,6 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 10);
 })
 
+// fade in effect when the page is loaded with htmx
+document.addEventListener("htmx:afterSwap", () => {
+  const fadeInElement = document.querySelector(".fade-in");
+  if (fadeInElement) {
+    fadeInElement.classList.remove("visible");
+    setTimeout(() => {
+      fadeInElement.classList.add("visible")
+    }, 50);
+  }
+})
+//document.addEventListener("htmx:afterSwap", () => {
+//  setTimeout(() => {
+//    document.querySelector(".fade-in").classList.add("visible")
+//  }, 10);
+//})
+
 //window.addEventListener('DOMContentLoaded', () => { 
 //  const about = document.getElementById("about");
 //  about.classList.add("visible");
