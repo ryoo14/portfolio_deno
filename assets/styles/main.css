@@ -28,6 +28,14 @@ html, body {
   text-decoration-color: #fd8850;
 }
 
+#blog-entry h3 a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  text-decoration-color: #fd8850;
+}
+
 #blog-entry p a {
   text-decoration: underline;
   text-decoration-style: dotted;
