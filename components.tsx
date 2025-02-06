@@ -35,7 +35,7 @@ export const Home = (props) => {
 
 const SideBar = () => {
   return (
-    <div class="sidebar flex flex-row justify-between items-center backdrop-blur-sm fixed top-0 lg:top-20 z-10 w-10/12 h-16 sm:w-11/12 sm:h-20 lg:h-28 lg:flex-col lg:left-16 lg:w-24">
+    <div class="sidebar flex flex-row justify-between items-center backdrop-blur-sm fixed top-0 lg:top-20 z-10 w-11/12 h-16 sm:w-11/12 sm:h-20 lg:h-28 lg:flex-col lg:left-16 lg:w-24">
       <object data="/static/ryoop.svg" class="h-12 lg:mb-20" />
       <div class="links flex flex-row w-4/6 sm:w-3/6 lg:w-24 justify-between items-center lg:flex-col">
         <a href="/" hx-get="/about" hx-target="#main-content" hx-push-url="true" class="sidebar-link hover:text-rorange lg:mb-10" data-target="about">
