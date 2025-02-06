@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // fade in effect when the page is loaded with htmx
 document.addEventListener("htmx:afterSwap", () => {
+  // reset scroll position
+  window.scrollTo(0, 0);
   const fadeInElement = document.querySelector(".fade-in");
   if (fadeInElement) {
     fadeInElement.classList.remove("visible");
