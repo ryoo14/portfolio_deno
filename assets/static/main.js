@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("htmx:afterSwap", () => {
   // reset scroll position
   window.scrollTo(0, 0);
+  // rerun highlight.js
+  hljs.highlightAll();
   const fadeInElement = document.querySelector(".fade-in");
   if (fadeInElement) {
     fadeInElement.classList.remove("visible");
