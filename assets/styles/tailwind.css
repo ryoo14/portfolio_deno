@@ -448,6 +448,38 @@
 #blog-entry ul {
   margin-bottom: calc(var(--spacing) * 3);
 }
+#blog-entry table {
+  width: calc(var(--spacing) * 80);
+  table-layout: auto;
+  border-collapse: separate;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: var(--color-rgray);
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 180);
+  }
+  @media (prefers-color-scheme: dark) {
+    border-color: var(--color-rwhite);
+  }
+}
+#blog-entry th {
+  border-collapse: collapse;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: var(--color-rgray);
+  @media (prefers-color-scheme: dark) {
+    border-color: var(--color-rwhite);
+  }
+}
+#blog-entry td {
+  border-collapse: collapse;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: var(--color-rgray);
+  @media (prefers-color-scheme: dark) {
+    border-color: var(--color-rwhite);
+  }
+}
 @layer theme, base, components, utilities;
 @layer theme;
 @layer base {

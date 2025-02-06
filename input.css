@@ -48,4 +48,14 @@
   @apply mb-3;
 }
 
+#blog-entry table {
+  @apply table-auto border-separate border border-rgray dark:border-rwhite w-80 sm:w-180;
+}
+#blog-entry th {
+  @apply border-collapse border border-rgray dark:border-rwhite;
+}
+#blog-entry td {
+  @apply border-collapse border border-rgray dark:border-rwhite;
+}
+
 @import "tailwindcss"
