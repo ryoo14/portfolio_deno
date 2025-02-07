@@ -49,7 +49,7 @@
 }
 
 #blog-entry table {
-  @apply table-auto border-separate border border-rgray dark:border-rwhite w-80 sm:w-180;
+  @apply mt-4 mb-4 table-auto border-separate border border-rgray dark:border-rwhite w-80 sm:w-180;
 }
 #blog-entry th {
   @apply border-collapse border border-rgray dark:border-rwhite;
