@@ -1,5 +1,5 @@
 ---
-title: Monthly Report Dec 2025
+title: Monthly Report Jan 2025
 publish_date: 2025-01-31
 tags: [monthly_report]
 ---

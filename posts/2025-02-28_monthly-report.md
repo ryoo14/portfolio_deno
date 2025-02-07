@@ -1,5 +1,5 @@
 ---
-title: Monthly Report Dec 2025
+title: Monthly Report Feb 2025
 publish_date: 2025-02-28
 tags: [monthly_report]
 draft: true
