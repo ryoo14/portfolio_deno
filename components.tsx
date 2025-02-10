@@ -12,6 +12,9 @@ export const Home = (props) => {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
         <link rel="icon" href="/static/portfoliop.svg" type="image/svg+xml" />
         <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/base16/onedark.css" />
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script type="module" src="/static/bskycomments.js" />
         <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
         <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/vim.min.js"></script>
 

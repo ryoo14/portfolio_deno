@@ -97,6 +97,7 @@ app.get("/blog/:path", (c) => {
   const blogObject = matter(blogData)
   const frontMatter = blogObject.data
   const frontMatterDate = new Date(frontMatter.publish_date).toISOString().split("T")[0]
+  const frontMatterBskyUrl = frontMatter.bsky_url
   const contentMd = blogObject.content
   const contentHtml = marked(contentMd) as string
   const innerHtml = { __html: contentHtml }
@@ -111,6 +112,7 @@ app.get("/blog/:path", (c) => {
           <div class="text-sm">{frontMatter.tags}</div>
         </div>
         <div dangerouslySetInnerHTML={innerHtml} />
+        { frontMatterBskyUrl && <bsky-comments post-https-url={frontMatterBskyUrl} /> }
       </div>
     )
   } else {
@@ -123,6 +125,7 @@ app.get("/blog/:path", (c) => {
             <div class="text-sm">{frontMatter.tags}</div>
           </div>
           <div dangerouslySetInnerHTML={innerHtml} />
+          { frontMatterBskyUrl && <bsky-comments post-https-url={frontMatterBskyUrl} /> }
         </div>
       </Home>
     )
