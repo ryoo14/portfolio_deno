@@ -9,6 +9,7 @@ html, body {
   justify-content: center;
 }
 
+/* fade in effect for contents */
 .fade-in {
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -20,7 +21,9 @@ html, body {
   transform: translateY(0);
 }
 
-#blog-entry h3 {
+/* dotted underline for header and link in blog entry */
+#blog-entry h3,
+#blog-entry h3 a { 
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-thickness: 3px;
@@ -28,14 +31,7 @@ html, body {
   text-decoration-color: #fd8850;
 }
 
-#blog-entry h3 a {
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 3px;
-  text-decoration-color: #fd8850;
-}
-
+#blog-entry li a,
 #blog-entry p a {
   text-decoration: underline;
   text-decoration-style: dotted;
@@ -44,10 +40,17 @@ html, body {
   text-decoration-color: #3aafb9;
 }
 
-#blog-entry li a {
+/* dotted underline for link and button in blueskye comment section */
+#bsky-link a, 
+#show-more {
   text-decoration: underline;
   text-decoration-style: dotted;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 2px;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
   text-decoration-color: #3aafb9;
+}
+
+#bsky-link a:hover,
+#show-more:hover {
+  color: #3aafb9;
 }
