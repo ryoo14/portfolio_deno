@@ -121,10 +121,11 @@ class BskyComments extends HTMLElement {
     const container = document.createElement("div");
     container.innerHTML = `
       <h2 id="bsky-link" class="flex">
-        コメントは
+        💬コメント(
         <a href="https://bsky.app/profile/${this.handle}/post/${this.postId}" target="_blank" rel="noopener noreferrer">
-          Blueskyで
+          Bluesky
         </a>
+        )
       </h2>
       <div id="comments" class="lg:w-[60%]"></div>
       <button id="show-more" class="mb-4">
