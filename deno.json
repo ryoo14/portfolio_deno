@@ -13,5 +13,21 @@
     "jsx": "precompile",
     "jsxImportSource": "@hono/hono/jsx"
   },
-  "nodeModulesDir": "auto"
+  "nodeModulesDir": "auto",
+  "fmt": {
+    "include": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.js"
+    ],
+    "useTabs": false,
+    "lineWidth": 160,
+    "semiColons": false
+  },
+  "lint": {
+    "include": [
+      "**/*.ts",
+      "**/*.tsx"
+    ]
+  }
 }
