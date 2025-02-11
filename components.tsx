@@ -102,6 +102,20 @@ export const Blog = () => {
   )
 }
 
+export const BlogEntry = (props) => {
+  return (
+    <div id="blog-entry" class="fade-in">
+      <div class="front-matter mb-4">
+        <div class="text-3xl text-bold mb-4">{props.title}</div>
+        <div class="text-sm">{props.date}</div>
+        <div class="text-sm">{props.tags}</div>
+      </div>
+      <div dangerouslySetInnerHTML={props.content} />
+      { props.bskyUrl && <bsky-comments post-https-url={props.bskyUrl} /> }
+    </div>
+  )
+}
+
 export const Footer = () => {
   const year = new Date().getFullYear()
   return (

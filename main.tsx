@@ -3,8 +3,7 @@ import { serveStatic } from "@hono/hono/deno"
 import { work, use } from "./contents.ts"
 import matter from "gray-matter"
 import { marked } from "marked"
-import { Home, About, ContentTemplate, Blog } from "./components.tsx"
-
+import { Home, About, ContentTemplate, Blog, BlogEntry } from "./components.tsx"
 
 const app = new Hono()
 
@@ -92,41 +91,42 @@ app.get("/blog", (c) => {
 })
 
 app.get("/blog/:path", (c) => {
+  // Get the blog file path from the URL
   const blogFile = c.req.param("path")
   const blogData = Deno.readTextFileSync(`./posts/${blogFile}.md`)
+
+  // Parse the blog file
   const blogObject = matter(blogData)
+
+  // Get the front matter data
   const frontMatter = blogObject.data
-  const frontMatterDate = new Date(frontMatter.publish_date).toISOString().split("T")[0]
-  const frontMatterBskyUrl = frontMatter.bsky_url
+  const blogTitle = frontMatter.title
+  const blogDate = new Date(frontMatter.publish_date).toISOString().split("T")[0]
+  const blogTags = frontMatter.tags
+  const blogBskyUrl = frontMatter.bsky_url
+
+  // Get the content data
   const contentMd = blogObject.content
   const contentHtml = marked(contentMd) as string
   const innerHtml = { __html: contentHtml }
 
+  const blogEntry = {
+    title: blogTitle,
+    date: blogDate,
+    tags: blogTags,
+    content: innerHtml,
+    bskyUrl: blogBskyUrl,
+  }
+
   const isPartial = c.req.header("HX-Request") === "true"
   if (isPartial) {
     return c.html(
-      <div id="blog-entry" class="fade-in">
-        <div class="front-matter mb-4">
-          <div class="text-3xl text-bold mb-4">{frontMatter.title}</div>
-          <div class="text-sm">{frontMatterDate}</div>
-          <div class="text-sm">{frontMatter.tags}</div>
-        </div>
-        <div dangerouslySetInnerHTML={innerHtml} />
-        { frontMatterBskyUrl && <bsky-comments post-https-url={frontMatterBskyUrl} /> }
-      </div>
+      <BlogEntry {...blogEntry} />
     )
   } else {
     return c.html(
       <Home>
-        <div id="blog-entry" class="fade-in">
-          <div class="front-matter mb-4">
-            <div class="text-3xl text-bold mb-4">{frontMatter.title}</div>
-            <div class="text-sm">{frontMatterDate}</div>
-            <div class="text-sm">{frontMatter.tags}</div>
-          </div>
-          <div dangerouslySetInnerHTML={innerHtml} />
-          { frontMatterBskyUrl && <bsky-comments post-https-url={frontMatterBskyUrl} /> }
-        </div>
+        <BlogEntry {...blogEntry} />
       </Home>
     )
   }
