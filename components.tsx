@@ -19,7 +19,12 @@ export const Home = (props) => {
         <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/vim.min.js"></script>
 
         <script>hljs.highlightAll();</script>
-        <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+        <script
+          src="https://unpkg.com/htmx.org@2.0.4"
+          integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+          crossorigin="anonymous"
+        >
+        </script>
         <title>ryoo.cc</title>
       </head>
       <body>
@@ -111,7 +116,7 @@ export const BlogEntry = (props) => {
         <div class="text-sm">{props.tags}</div>
       </div>
       <div dangerouslySetInnerHTML={props.content} />
-      { props.bskyUrl && <bsky-comments post-https-url={props.bskyUrl} /> }
+      {props.bskyUrl && <bsky-comments post-https-url={props.bskyUrl} />}
     </div>
   )
 }

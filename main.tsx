@@ -1,9 +1,9 @@
 import { Hono } from "@hono/hono"
 import { serveStatic } from "@hono/hono/deno"
-import { work, use } from "./contents.ts"
+import { use, work } from "./contents.ts"
 import matter from "gray-matter"
 import { marked } from "marked"
-import { Home, About, ContentTemplate, Blog, BlogEntry } from "./components.tsx"
+import { About, Blog, BlogEntry, ContentTemplate, Home } from "./components.tsx"
 
 const app = new Hono()
 
@@ -11,15 +11,16 @@ app.notFound((c) => {
   return c.html(
     <Home>
       <div class="fade-in">Not Found</div>
-    </Home>
-  , 404)
+    </Home>,
+    404,
+  )
 })
 
 app.get("/", (c) => {
   const isPartial = c.req.header("HX-Request") === "true"
   if (isPartial) {
     return c.html(
-      <About />
+      <About />,
     )
   } else {
     return c.html(
@@ -34,7 +35,7 @@ app.get("/about", (c) => {
   const isPartial = c.req.header("HX-Request") === "true"
   if (isPartial) {
     return c.html(
-      <About />
+      <About />,
     )
   } else {
     return c.html(
@@ -49,7 +50,7 @@ app.get("/works", (c) => {
   const isPartial = c.req.header("HX-Request") === "true"
   if (isPartial) {
     return c.html(
-      <ContentTemplate {...work} />
+      <ContentTemplate {...work} />,
     )
   } else {
     return c.html(
@@ -64,7 +65,7 @@ app.get("/uses", (c) => {
   const isPartial = c.req.header("HX-Request") === "true"
   if (isPartial) {
     return c.html(
-      <ContentTemplate {...use} />
+      <ContentTemplate {...use} />,
     )
   } else {
     return c.html(
@@ -79,13 +80,13 @@ app.get("/blog", (c) => {
   const isPartial = c.req.header("HX-Request") === "true"
   if (isPartial) {
     return c.html(
-      <Blog />
+      <Blog />,
     )
   } else {
     return c.html(
       <Home>
         <Blog />
-      </Home>
+      </Home>,
     )
   }
 })
@@ -121,13 +122,13 @@ app.get("/blog/:path", (c) => {
   const isPartial = c.req.header("HX-Request") === "true"
   if (isPartial) {
     return c.html(
-      <BlogEntry {...blogEntry} />
+      <BlogEntry {...blogEntry} />,
     )
   } else {
     return c.html(
       <Home>
         <BlogEntry {...blogEntry} />
-      </Home>
+      </Home>,
     )
   }
 })

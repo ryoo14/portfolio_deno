@@ -111,14 +111,14 @@ class BskyComments extends HTMLElement {
   }
   render() {
     if (!this.thread || !this.thread.replies) {
-      this.renderError("No comments found");
-      return;
+      this.renderError("No comments found")
+      return
     }
 
     const replies = this.thread.replies
     console.log(replies)
 
-    const container = document.createElement("div");
+    const container = document.createElement("div")
     container.innerHTML = `
       <h2 id="bsky-link" class="flex">
         💬コメント(
@@ -131,40 +131,40 @@ class BskyComments extends HTMLElement {
       <button id="show-more" class="mb-4">
         もっとみる
       </button>
-    `;
+    `
 
-    const comments = container.querySelector("#comments");
+    const comments = container.querySelector("#comments")
     replies.slice(0, this.visibleCount).forEach((reply) => {
-      comments.appendChild(this.createCommentElement(reply));
-    });
+      comments.appendChild(this.createCommentElement(reply))
+    })
 
-    const showMoreButton = container.querySelector("#show-more");
+    const showMoreButton = container.querySelector("#show-more")
     if (this.visibleCount >= replies.length) {
-      showMoreButton.style.display = "none";
+      showMoreButton.style.display = "none"
     }
     showMoreButton.addEventListener("click", () => {
-      this.visibleCount += 3;
-      this.render();
-    });
+      this.visibleCount += 3
+      this.render()
+    })
 
-    this.innerHTML = "";
-    this.appendChild(container);
+    this.innerHTML = ""
+    this.appendChild(container)
   }
 
   createCommentElement(reply) {
-    const comment = document.createElement("div");
-    comment.classList.add("comment");
+    const comment = document.createElement("div")
+    comment.classList.add("comment")
 
-    const author = reply.post.author;
-    const text = reply.post.record?.text || "";
-    const replyId = reply.post.uri.replace(`at://${author.did}/app.bsky.feed.post/`, "");
+    const author = reply.post.author
+    const text = reply.post.record?.text || ""
+    const replyId = reply.post.uri.replace(`at://${author.did}/app.bsky.feed.post/`, "")
 
     comment.innerHTML = `
       <div class="w-fit">
         <a href="https://bsky.app/profile/${author.handle}" target="_blank" rel="noopener noreferrer">
           <div id="authoer" class="flex items-center mb-1">
             <div id="author-avater" class="mr-2">
-              ${author.avatar ? `<img class="rounded-full" width="22px" src="${author.avatar}" />` : ''}
+              ${author.avatar ? `<img class="rounded-full" width="22px" src="${author.avatar}" />` : ""}
             </div>
             <div id="author-name" class="text-base mr-2">
               ${author.displayName ?? author.handle}
@@ -188,38 +188,38 @@ class BskyComments extends HTMLElement {
           ${reply.post.replyCount ?? 0} <ion-icon class="text-rblue" name="chatbubbles-outline"></ion-icon>
         </div>
       </div>
-    `;
+    `
 
     if (reply.replies && reply.replies.length > 0) {
-      const repliesContainer = document.createElement("div");
-      repliesContainer.classList.add("replies-container");
-      repliesContainer.classList.add("ml-1");
-      repliesContainer.classList.add("pl-2");
-      repliesContainer.classList.add("border-l-2");
+      const repliesContainer = document.createElement("div")
+      repliesContainer.classList.add("replies-container")
+      repliesContainer.classList.add("ml-1")
+      repliesContainer.classList.add("pl-2")
+      repliesContainer.classList.add("border-l-2")
 
       reply.replies
         .forEach((childReply) => {
-          repliesContainer.appendChild(this.createCommentElement(childReply));
-        });
+          repliesContainer.appendChild(this.createCommentElement(childReply))
+        })
 
-      comment.appendChild(repliesContainer);
+      comment.appendChild(repliesContainer)
     }
 
-    return comment;
+    return comment
   }
 
   escapeHTML(htmlString) {
     return htmlString
-      .replace(/&/g, '&amp;') // Escape &
-      .replace(/</g, '&lt;')  // Escape <
-      .replace(/>/g, '&gt;')  // Escape >
-      .replace(/"/g, '&quot;') // Escape "
-      .replace(/'/g, '&#039;'); // Escape '
+      .replace(/&/g, "&amp;") // Escape &
+      .replace(/</g, "&lt;") // Escape <
+      .replace(/>/g, "&gt;") // Escape >
+      .replace(/"/g, "&quot;") // Escape "
+      .replace(/'/g, "&#039;") // Escape '
   }
 
   renderError(message) {
-    this.innerHTML = `<p class="error">${message}</p>`;
+    this.innerHTML = `<p class="error">${message}</p>`
   }
 }
 
-customElements.define("bsky-comments", BskyComments);
+customElements.define("bsky-comments", BskyComments)

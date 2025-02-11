@@ -102,7 +102,8 @@ export const use: Contents = {
       overview: "Keyboard",
       detail: "My Endgame Keyboard for now.",
       thumbnail: "https://d3toh8on7lf5va.cloudfront.net/cstc402.jpg",
-      url: "https://kprepublic.com/products/cstc40-40-rgb-40-hot-swappable-mechanical-keyboard-pcb-programmed-qmk-via-vial-firmware-rgb-switch-underglow-type-c-planck?srsltid=AfmBOopzhoxajTD1NGUYfGiU4vomMPIXu2eyM37cDoxRNIgB91XR8G4-",
+      url:
+        "https://kprepublic.com/products/cstc40-40-rgb-40-hot-swappable-mechanical-keyboard-pcb-programmed-qmk-via-vial-firmware-rgb-switch-underglow-type-c-planck?srsltid=AfmBOopzhoxajTD1NGUYfGiU4vomMPIXu2eyM37cDoxRNIgB91XR8G4-",
     },
     {
       title: 'M2 MacBook Air 13"',

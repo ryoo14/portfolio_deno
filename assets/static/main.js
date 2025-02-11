@@ -1,40 +1,40 @@
 function setColor() {
-  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
-  const body = document.body;
-  const darkColor = "#292f36";
-  const lightColor = "#fffcf9";
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    themeColorMeta.setAttribute("content", darkColor);
-    body.style.color = lightColor;
-    body.style.backgroundColor = darkColor;
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]')
+  const body = document.body
+  const darkColor = "#292f36"
+  const lightColor = "#fffcf9"
+  if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    themeColorMeta.setAttribute("content", darkColor)
+    body.style.color = lightColor
+    body.style.backgroundColor = darkColor
   } else {
-    themeColorMeta.setAttribute("content", lightColor);
-    body.style.color = darkColor;
-    body.style.backgroundColor = lightColor;
+    themeColorMeta.setAttribute("content", lightColor)
+    body.style.color = darkColor
+    body.style.backgroundColor = lightColor
   }
 }
 
-setColor();
-window.matchMedia('(prefers-color-scheme: dark)').addListener(setColor);
+setColor()
+window.matchMedia("(prefers-color-scheme: dark)").addListener(setColor)
 
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     document.querySelector(".fade-in").classList.add("visible")
-  }, 10);
+  }, 10)
 })
 
 // fade in effect when the page is loaded with htmx
 document.addEventListener("htmx:afterSwap", () => {
   // reset scroll position
-  window.scrollTo(0, 0);
+  window.scrollTo(0, 0)
   // rerun highlight.js
-  hljs.highlightAll();
-  const fadeInElement = document.querySelector(".fade-in");
+  hljs.highlightAll()
+  const fadeInElement = document.querySelector(".fade-in")
   if (fadeInElement) {
-    fadeInElement.classList.remove("visible");
+    fadeInElement.classList.remove("visible")
     setTimeout(() => {
       fadeInElement.classList.add("visible")
-    }, 50);
+    }, 50)
   }
 })
 //document.addEventListener("htmx:afterSwap", () => {
@@ -43,7 +43,7 @@ document.addEventListener("htmx:afterSwap", () => {
 //  }, 10);
 //})
 
-//window.addEventListener('DOMContentLoaded', () => { 
+//window.addEventListener('DOMContentLoaded', () => {
 //  const about = document.getElementById("about");
 //  about.classList.add("visible");
 //});
@@ -66,4 +66,3 @@ document.addEventListener("htmx:afterSwap", () => {
 //    }, 10);
 //  });
 //});
-
