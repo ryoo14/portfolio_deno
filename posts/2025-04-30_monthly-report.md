@@ -2,7 +2,7 @@
 title: Monthly Report Apr 2025
 publish_date: 2025-04-30
 tags: [monthly_report]
-draft: true
+draft: false
 bsky_url: 
 ---
 
