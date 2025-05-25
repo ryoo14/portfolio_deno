@@ -69,9 +69,9 @@ CNCでアルミニウムケース作るかどうかぼんやり考えつつ、�
 
 いつも勝手にお世話になってる[Monkeytype](https://monkeytype.com)のArtisan Keycap。限定500セット。
 
-Artisan Keycapってあんまり興味なかったけどシンプルで可愛いのでうっかり買ってしまった。
+Artisan Keycapってあんまり興味なかったけどシンプルで可愛いのでうっかり買ってしまった。トレイ買って、ディスプレイしたいな。
 
-Arisan Keycapトレイみたいな買って、ディスプレイしたいな。
+Artisanといえば[Undead?](https://booth.pm/ja/items/5548315)再販が待たれる。再販されても買えないだろうけど。
 
 ## 👾 コンテンツ消費
 
@@ -117,8 +117,18 @@ YouTubeのショートか何かで小五郎のおっちゃんが頭から血を�
 
 ## 📷 写真
 
+今月は久々にXE-4引っ張り出してきて写真撮った。どっちもお気に入りの写真。
+
+RHYn-OC47
+
+![RHYn-OC47](https://d3toh8on7lf5va.cloudfront.net/rhyn-oc47_3dcase.jpg)
+
+<br />
+
 子と遊びに行った時にお揃いで買ったおもちゃの指輪。可愛いので机に飾ってる。
 
 ![ゲームコントローラー](https://d3toh8on7lf5va.cloudfront.net/game_controller.jpg)
 
-この記事はRHYn-OC47で書きました。
+<br />
+
+この記事はRHYn-OC47(3D case版)で書きました。
