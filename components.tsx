@@ -30,7 +30,7 @@ export const Home = (props) => {
       <body>
         <div class="container flex flex-col justify-start items-center w-full lg:flex-row lg:block mt-0 lg:mt-20">
           <SideBar />
-          <div id="main-content" class="w-10/12 sm:w-11/12 lg:w-9/12 lg:absolute mt-24 sm:mt-32 mb-10 lg:left-56 lg:mt-0">
+          <div id="main-content" class="w-10/12 sm:w-11/12 lg:w-2/5 lg:absolute mt-24 sm:mt-32 mb-10 lg:left-56 lg:mt-0">
             {props.children}
           </div>
           <Footer />

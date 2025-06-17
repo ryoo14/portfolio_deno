@@ -913,9 +913,9 @@
       height: calc(var(--spacing) * 28);
     }
   }
-  .lg\:w-9\/12 {
+  .lg\:w-2\/5 {
     @media (width >= 64rem) {
-      width: calc(9/12 * 100%);
+      width: calc(2/5 * 100%);
     }
   }
   .lg\:w-24 {
