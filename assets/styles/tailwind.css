@@ -419,13 +419,6 @@
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
 }
-#blog-entry ul {
-  margin-bottom: calc(var(--spacing) * 1);
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
-  --tw-font-weight: var(--font-weight-extralight);
-  font-weight: var(--font-weight-extralight);
-}
 #blog-entry p a {
   &:hover {
     @media (hover: hover) {
@@ -433,12 +426,27 @@
     }
   }
 }
-#blog-entry li a {
-  &:hover {
-    @media (hover: hover) {
-      color: var(--color-rblue);
-    }
-  }
+#blog-entry ul {
+  margin-bottom: calc(var(--spacing) * 1);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-font-weight: var(--font-weight-extralight);
+  font-weight: var(--font-weight-extralight);
+}
+#blog-entry ul ul {
+  margin-top: calc(var(--spacing) * 1);
+  margin-left: calc(var(--spacing) * 5);
+}
+#blog-entry ul ul ul {
+  margin-left: calc(var(--spacing) * 10);
+}
+#blog-entry ol li {
+  margin-bottom: calc(var(--spacing) * 1);
+  list-style-type: decimal;
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-font-weight: var(--font-weight-extralight);
+  font-weight: var(--font-weight-extralight);
 }
 #blog-entry li {
   margin-bottom: calc(var(--spacing) * 1);
@@ -447,8 +455,12 @@
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
 }
-#blog-entry ul {
-  margin-bottom: calc(var(--spacing) * 3);
+#blog-entry li a {
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-rblue);
+    }
+  }
 }
 #blog-entry table {
   margin-top: calc(var(--spacing) * 4);
