@@ -12,11 +12,14 @@ bsky_url:
 
 ## 📚 学んだこととかやったこと
 
-### [自分でキーボードを基板から設計してみた](https://github.com/ryoo14/rhyn-oc47)
+### [自分でキーボードを基板から設計してみた](https://github.com/ryoo14/rhyn47)
 
-まだ記事書けてないのにRP2040直付け基板の設計と製造を終わらせて、無事簡単な動作確認はできた。
+RP2040直付け基板の動作確認、3DPケースも届いて組み立ても完了。紹介記事と経緯記事も書けたので、RHYn47は完成した。
 
-専用の3DPケースはまだ手元に届いていない。どうやら結構リスクの高い形状らしく、始めてJLCから警告メールが届いた。
+- [RHYn47というキーボードを0から設計した話](https://ryoo.cc/blog/2025-06-20_intro_rhyn47)
+- [RHYn47というキーボードを0から設計した話、あるいは格子型配列(オーソリニア)の魅力 \~駄文編\~](https://ryoo.cc/blog/2025-06-17_rhyn47)
+
+GB参加中の[PBS Modern Abacus](https://en.zfrontier.com/products/group-buy-pbs-modern-abacus?variant=50299713421627)が届いたら装着する予定。楽しみだー。
 
 ### [つくって、壊して、直して学ぶ Kubernetes入門](https://amzn.to/4c22Caf)
 
@@ -56,5 +59,10 @@ bsky_url:
 
 ## 📷 写真
 
+3DPケースを蜜蝋ワックスで磨いたらしっとり上品になった気がする。
 
-この記事はRHYn-OC47(3D case版)で書きました。
+![rhyn47](https://d3toh8on7lf5va.cloudfront.net/rhyn47_v3.jpg)
+
+<br />
+
+![rhyn47_2](https://d3toh8on7lf5va.cloudfront.net/rhyn47_v03_side.jpg)
