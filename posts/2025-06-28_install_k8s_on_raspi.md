@@ -3,7 +3,7 @@ title: ラズパイラックにKubernetesをインストールしてみる
 publish_date: 2025-06-28
 tags: [tech k8s]
 draft: false
-bsky_url: 
+bsky_url: https://bsky.app/profile/ryoo.cc/post/3lt7jvyg5gk24
 ---
 
 ## 概要
