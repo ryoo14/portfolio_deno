@@ -109,7 +109,7 @@ export const Blog = () => {
 
 export const BlogEntry = (props) => {
   return (
-    <div id="blog-entry" class="fade-in">
+    <div id="blog-entry" class="fade-in lg:w-3/5">
       <div class="front-matter mb-4">
         <div class="text-3xl text-bold mb-4">{props.title}</div>
         <div class="text-sm">{props.date}</div>

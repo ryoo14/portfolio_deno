@@ -175,7 +175,7 @@ class BskyComments extends HTMLElement {
           </div>
         </a>
       </div>
-      <div id="comment-text" class="mb-1">
+      <div id="comment-text" class="mb-1 text-sm">
         <a href="https://bsky.app/profile/${author.handle}/post/${replyId}" target="_blank" rel="noopener noreferrer">
           ${this.escapeHTML(text)}
         </a>

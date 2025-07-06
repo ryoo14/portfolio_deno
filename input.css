@@ -22,30 +22,39 @@
 }
 
 #blog-entry p {
-  @apply text-sm mb-1 font-extralight;
+  @apply text-sm mb-1 leading-8 font-extralight;
 }
 
 #blog-entry code {
   @apply text-sm mt-2 mb-2;
 }
 
+#blog-entry p a {
+  @apply hover:text-rblue;
+}
+
 #blog-entry ul {
   @apply text-sm mb-1 font-extralight;
 }
 
-#blog-entry p a {
-  @apply hover:text-rblue;
+#blog-entry ul ul {
+  @apply mt-1 ml-5;
 }
-#blog-entry li a {
-  @apply hover:text-rblue;
+
+#blog-entry ul ul ul {
+  @apply ml-10;
+}
+
+#blog-entry ol li {
+  @apply text-sm mb-1 font-extralight list-decimal;
 }
 
 #blog-entry li {
   @apply text-sm mb-1 list-disc list-inside;
 }
 
-#blog-entry ul {
-  @apply mb-3;
+#blog-entry li a {
+  @apply hover:text-rblue;
 }
 
 #blog-entry table {
