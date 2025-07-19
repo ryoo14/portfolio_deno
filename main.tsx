@@ -17,18 +17,7 @@ app.notFound((c) => {
 })
 
 app.get("/", (c) => {
-  const isPartial = c.req.header("HX-Request") === "true"
-  if (isPartial) {
-    return c.html(
-      <About />,
-    )
-  } else {
-    return c.html(
-      <Home>
-        <About />
-      </Home>,
-    )
-  }
+  return c.redirect("/about", 301)
 })
 
 app.get("/about", (c) => {
