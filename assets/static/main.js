@@ -23,8 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 10)
 })
 
-// fade in effect when the page is loaded with htmx
-document.addEventListener("htmx:afterSwap", () => {
+// fade in effect and set title when the page is loaded with htmx
+document.addEventListener("htmx:afterSwap", (evt) => {
+  // set the page title
+  const xhr = evt.detail.xhr
+  const pageTitle = xhr.getResponseHeader("Page-Title")
+  if (pageTitle) {
+    document.title = decodeURIComponent(pageTitle)
+  }
   // reset scroll position
   window.scrollTo(0, 0)
   // rerun highlight.js

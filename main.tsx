@@ -1,4 +1,4 @@
-import { Hono } from "@hono/hono"
+import { Context, Hono } from "@hono/hono"
 import { serveStatic } from "@hono/hono/deno"
 import { use, work } from "./contents.ts"
 import matter from "gray-matter"
@@ -6,6 +6,20 @@ import { marked } from "marked"
 import { About, Blog, BlogEntry, ContentTemplate, Home } from "./components.tsx"
 
 const app = new Hono()
+
+function renderWithTitle(c: Context, pageTitle: string, component) {
+  const isPartial = c.req.header("HX-Request") === "true"
+  if (isPartial) {
+    c.header("Page-Title", encodeURIComponent(pageTitle))
+    return c.html(component)
+  } else {
+    return c.html(
+      <Home pageTitle={pageTitle}>
+        {component}
+      </Home>,
+    )
+  }
+}
 
 app.notFound((c) => {
   return c.html(
@@ -21,63 +35,19 @@ app.get("/", (c) => {
 })
 
 app.get("/about", (c) => {
-  const isPartial = c.req.header("HX-Request") === "true"
-  if (isPartial) {
-    return c.html(
-      <About />,
-    )
-  } else {
-    return c.html(
-      <Home>
-        <About />
-      </Home>,
-    )
-  }
+  return renderWithTitle(c, "About | ryoo.cc", <About />)
 })
 
 app.get("/works", (c) => {
-  const isPartial = c.req.header("HX-Request") === "true"
-  if (isPartial) {
-    return c.html(
-      <ContentTemplate {...work} />,
-    )
-  } else {
-    return c.html(
-      <Home>
-        <ContentTemplate {...work} />
-      </Home>,
-    )
-  }
+  return renderWithTitle(c, "Works | ryoo.cc", <ContentTemplate {...work} />)
 })
 
 app.get("/uses", (c) => {
-  const isPartial = c.req.header("HX-Request") === "true"
-  if (isPartial) {
-    return c.html(
-      <ContentTemplate {...use} />,
-    )
-  } else {
-    return c.html(
-      <Home>
-        <ContentTemplate {...use} />
-      </Home>,
-    )
-  }
+  return renderWithTitle(c, "Uses | ryoo.cc", <ContentTemplate {...use} />)
 })
 
 app.get("/blog", (c) => {
-  const isPartial = c.req.header("HX-Request") === "true"
-  if (isPartial) {
-    return c.html(
-      <Blog />,
-    )
-  } else {
-    return c.html(
-      <Home>
-        <Blog />
-      </Home>,
-    )
-  }
+  return renderWithTitle(c, "Blog | ryoo.cc", <Blog />)
 })
 
 app.get("/blog/:path", (c) => {
@@ -108,18 +78,8 @@ app.get("/blog/:path", (c) => {
     bskyUrl: blogBskyUrl,
   }
 
-  const isPartial = c.req.header("HX-Request") === "true"
-  if (isPartial) {
-    return c.html(
-      <BlogEntry {...blogEntry} />,
-    )
-  } else {
-    return c.html(
-      <Home>
-        <BlogEntry {...blogEntry} />
-      </Home>,
-    )
-  }
+  return renderWithTitle(c, `${blogTitle} | ryoo.cc`, <BlogEntry {...blogEntry} />,
+  )
 })
 
 app.get("/styles/*", serveStatic({ root: "./assets" }))

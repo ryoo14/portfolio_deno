@@ -25,7 +25,7 @@ export const Home = (props) => {
           crossorigin="anonymous"
         >
         </script>
-        <title>ryoo.cc</title>
+        <title>{props.pageTitle}</title>
       </head>
       <body>
         <div class="container flex flex-col justify-start items-center w-full lg:flex-row lg:block mt-0 lg:mt-20">
