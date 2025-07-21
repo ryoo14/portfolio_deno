@@ -7,14 +7,30 @@ import { About, Blog, BlogEntry, ContentTemplate, Home } from "./components.tsx"
 
 const app = new Hono()
 
+interface OGP {
+  title: string
+  type: "website" | "article"
+  image: string
+  url: string
+}
+
 function renderWithTitle(c: Context, pageTitle: string, component) {
+  // set ogp metadat
+  const type = c.req.path.startsWith("/blog/") ? "article" : "website"
+  const ogp: OGP = {
+    title: pageTitle,
+    type: type,
+    image: "https://d3toh8on7lf5va.cloudfront.net/rhyn47_v3.jpg",
+    url: `https://ryoo.cc${c.req.path}`
+  }
+
   const isPartial = c.req.header("HX-Request") === "true"
   if (isPartial) {
     c.header("Page-Title", encodeURIComponent(pageTitle))
     return c.html(component)
   } else {
     return c.html(
-      <Home pageTitle={pageTitle}>
+      <Home pageTitle={pageTitle} ogp={ogp}>
         {component}
       </Home>,
     )

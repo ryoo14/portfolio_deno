@@ -7,6 +7,10 @@ export const Home = (props) => {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#fffcf9" />
+        <meta property="og:title" content={props.ogp.title} />
+        <meta property="og:type" content={props.ogp.type} />
+        <meta property="og:url" content={props.ogp.url} />
+        <meta property="og:image" content={props.ogp.image} />
         <link rel="stylesheet" href="/styles/main.css" />
         <link rel="stylesheet" href="/styles/tailwind.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
