@@ -36,6 +36,8 @@ xfce4とxrdpをインストールしただけ。CPU8コア、メモリ24GBが無
 
 ## 🧐 気になったこと 
 
+https://zenn.dev/razokulover/articles/b6efec15ea1823
+
 ## 👾 コンテンツ消費
 
 ### [ソーシャル・ネットワーク](https://filmarks.com/movies/19235)
