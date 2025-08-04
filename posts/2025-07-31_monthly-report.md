@@ -3,7 +3,7 @@ title: Monthly Report Jul 2025
 publish_date: 2025-07-31
 tags: [monthly_report]
 draft: false
-bsky_url: 
+bsky_url: https://bsky.app/profile/ryoo.cc/post/3lvlbsmshsc25
 ---
 
 2025年7月の生存報告。
