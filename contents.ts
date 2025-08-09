@@ -84,20 +84,6 @@ export const use: Contents = {
       url: "https://ja.quarkeys.com/home",
     },
     {
-      title: "Geonix48",
-      overview: "Keyboard",
-      detail: "Minimal Keyboard for iPad mini",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/masuro2.jpg",
-      url: "https://chosfox.com/products/chosfox-x-masro-geonix48",
-    },
-    {
-      title: "Corne V4 Chocolate",
-      overview: "Keyboard",
-      detail: "My first split keyboard.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/corne2.jpg",
-      url: "https://shop.yushakobo.jp/products/8962",
-    },
-    {
       title: "CSTC40",
       overview: "Keyboard",
       detail: "My Endgame Keyboard for now.",
