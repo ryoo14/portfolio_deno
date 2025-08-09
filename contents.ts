@@ -19,7 +19,7 @@ export const work: Contents = {
       overview: "Web App",
       detail: "Web App that collects clipped hololive videos.",
       thumbnail: "/static/holocutp.svg",
-      url: "https://holocut.fan",
+      url: "https://holocut.ryo.lol",
     },
     {
       title: "Patty",
@@ -86,10 +86,18 @@ export const use: Contents = {
     {
       title: "CSTC40",
       overview: "Keyboard",
-      detail: "My Endgame Keyboard for now.",
+      detail: "Ortholinear 40% keyboard like mini TOFU.",
       thumbnail: "https://d3toh8on7lf5va.cloudfront.net/cstc402.jpg",
       url:
         "https://kprepublic.com/products/cstc40-40-rgb-40-hot-swappable-mechanical-keyboard-pcb-programmed-qmk-via-vial-firmware-rgb-switch-underglow-type-c-planck?srsltid=AfmBOopzhoxajTD1NGUYfGiU4vomMPIXu2eyM37cDoxRNIgB91XR8G4-",
+    },
+    {
+      title: "RHYn47",
+      overview: "Keyboard",
+      detail: "My first design keyboard and my endgame keyboard now.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/rhyn47_v3.jpg",
+      url:
+        "https://ryoo.cc/blog/2025-06-20_intro_rhyn47",
     },
     {
       title: 'M2 MacBook Air 13"',
