@@ -16,13 +16,19 @@ bsky_url:
 
 Kindleで買えるようになったと聞いたので久々に買った。ペラペラめくってる。
 
-### [AZ-700 Microsoft Azure ネットワーク ソリューションの設計と実装](https://learn.microsoft.com/ja-jp/training/paths/design-implement-microsoft-azure-networking-solutions-az-700/)
+### [AZ-700 Azure Network Engineer Associate](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-network-engineer-associate/?practice-assessment-type=certification)
 
 今年度序盤にSC-900を取ったっきりなので、もう1個取っとこうかなと勉強はじめた。
 
 演習がAzure触りながら実施できるのでとても良い。受験料高い。
 
 Azureの認定資格の中では中級に位置していて、結果的に落ちこそしなかったものの大変な労力がかかった[AZ-104](https://learn.microsoft.com/ja-jp/certifications/azure-administrator/)のトラウマが蘇る。
+
+### [DP-900 Azure Data Fundamentals](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-data-fundamentals/?practice-assessment-type=certification)
+
+AZ-700を取得できて気分が良かったのでノリでもう一つ取った。
+
+データ分析について知れたら良いなと思っていたが、初級は所詮初級なので言葉を暗記する程度で終わってしまった。そして自分がデータ分析に全く興味がないこともわかった。
 
 ### [つくって、壊して、直して学ぶ Kubernetes入門](https://amzn.to/4c22Caf)
 
@@ -66,6 +72,46 @@ Red Hatの認定資格の中で最上位に位置する資格。
 
 ### [キングスマン: ゴールデンサークル](https://filmarks.com/movies/64923)
 
+キングスマンの続編。
+
+死んだはずの相棒が生きてたり前作の登場人物とか友人をさくっと殺しちゃうあたりの適当さがちょっと残念。
+
+### [国宝](https://filmarks.com/movies/115241)
+
+歌舞伎に全てを捧げた一人の役者の人生のお話。
+
+歌舞伎何も知らないし3時間の超長編だし映画の前にラーメン屋でビール飲んでるし2000円で3時間昼寝できる、くらいの気持ちで映画館の席についてから、終わるまで一瞬。
+
+映画館は3時間ずーーーっと静まり返ってたし、知らず知らずのうちに鞄握りしめてるし、2000円でこの映画が観れるのは何かのバグだと思う。
+
+歌舞伎に全てを捧げた人たちの狂気と人間くささを味わえる。映画館で観るべき映画。
+
+### [冒険者になりたいと都に出て行った娘がSランクになってた -黒髪の戦乙女- #9](https://amzn.to/4mWdJFT)
+
+タイトル関係ないシリーズ。
+
+なかなかベルに会えないアンジェリン不憫。ただ貴族たちの元で別行動はおもしろいかも。
+
+ベルの昔の仲間もあらわれて、お話が動く気配。続きが楽しみ。
+
+### [エンドロールの後には最高の旅を #3](https://amzn.to/4oQ6EbP)
+
+魔王倒した後系ファンタジー。
+
+かなり駆け足で終わらせた印象。打ち切り？世界観は好きだったものの、勇者一家の不仲とか勇者死後の魔法使い弾圧の流れとか違和感があって残念。
+
+### [無職転生 ～異世界行ったら本気だす～ #23](https://amzn.to/4p8ADMr)
+
+ゼニス救出回。 パウロ死亡、ゼニス廃人でルーデウスが限界。それよりも娘たちがどうなるか気になる。
+
+### [ダンダダン #13-20](https://annict.com/works/14965)
+
+UMA, 幽霊系アニメの第二期。Twitterでイチャモンつけられてるのをみて二期やってることに気づけた。その意味では感謝している。
+
+やはり桃ちゃんかわいい。アイラもかわいい。女の子可愛いアニメはいいアニメだ。
+
+題材も個人的に好みだし、各キャラが立ってるしで原作読んでみたい欲求がでてきた。
+
 ## 📷 写真
 
-8月は1年くらい溜まってた写真を現像して嫁に提出した。喜んでくれてよかった。
+8月は1年くらい溜まってた写真を現像して妻に提出した。喜んでくれてよかった。
