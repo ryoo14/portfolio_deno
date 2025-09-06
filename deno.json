@@ -1,7 +1,8 @@
 {
   "tasks": {
     "dev": "deno run -A --watch main.tsx",
-    "summary": "deno run -RW summary.ts"
+    "summary": "deno run -RW summary.ts",
+    "gen-report": "deno run -A gen-report.ts"
   },
   "imports": {
     "@hono/hono": "jsr:@hono/hono@^4.6.19",
