@@ -34,6 +34,8 @@ AZ-700を取得できて気分が良かったのでノリでもう一つ取っ�
 
 ### [ベタープログラマ - 優れたプログラマになるための38の考え方とテクニック](https://amzn.to/4cShCI6)
 
+なーんも読んでない。9月頑張る。
+
 ## 🧐 気になったこと 
 
 ### [Red Hat 認定アーキテクト](https://www.redhat.com/ja/services/certification/rhca)
