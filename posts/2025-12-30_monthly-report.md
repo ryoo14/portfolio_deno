@@ -2,6 +2,8 @@
 title: Monthly Report Dec 2025
 publish_date: 2025-12-30
 tags: [monthly_report]
+draft: false
+bsky_url: 
 ---
 
 2025年12月の生存報告。
