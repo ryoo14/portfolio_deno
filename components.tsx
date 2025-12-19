@@ -73,8 +73,15 @@ export const About = () => {
       <div class="flex h-12 items-center mb-6">
         <h2 class="text-2xl mr-2">I'm ryoo.</h2>
       </div>
-      <p class="text-lg mb-4">I work as an Infrastructure Engineer in Japan and develop applications as a hobby.</p>
-      <p class="text-lg">I love taking photos, creating small apps, and clicking and clacking mechanical keyboards.</p>
+      <div class="my-about text-2xl">
+        <div class="flex items-center gap-2">
+        <p>I love</p>
+          <i class="ti ti-device-laptop hover:text-rorange" />
+          <i class="ti ti-keyboard hover:text-rorange" />
+          <i class="ti ti-beer hover:text-rorange" />
+          <i class="ti ti-camera hover:text-rorange" />
+        </div>
+      </div>
     </div>
   )
 }
