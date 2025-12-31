@@ -20,7 +20,7 @@ function renderWithTitle(c: Context, pageTitle: string, component) {
   const ogp: OGP = {
     title: pageTitle,
     type: type,
-    image: "https://d3toh8on7lf5va.cloudfront.net/rhyn47_v3.jpg",
+    image: "https://d3toh8on7lf5va.cloudfront.net/rhyl47-aluminium3-mini.jpg",
     url: `https://ryoo.cc${c.req.path}`
   }
 

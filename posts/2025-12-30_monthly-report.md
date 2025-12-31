@@ -3,7 +3,7 @@ title: Monthly Report Dec 2025
 publish_date: 2025-12-30
 tags: [monthly_report]
 draft: false
-bsky_url: 
+bsky_url: https://bsky.app/profile/ryoo.cc/post/3mbbyvffhwk2w
 ---
 
 2025年12月の生存報告。
