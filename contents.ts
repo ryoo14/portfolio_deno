@@ -49,6 +49,38 @@ export const use: Contents = {
   type: "use",
   contents: [
     {
+      title: "RHYn47 - resin case -",
+      overview: "Keyboard",
+      detail: "My first design keyboard.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/rhyn47-abacus-mini.jpg",
+      url:
+        "https://ryoo.cc/blog/2025-06-20_intro_rhyn47",
+    },
+    {
+      title: "RHYn47 - transparent case -",
+      overview: "Keyboard",
+      detail: "My first design keyboard.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/rhyn47-transparent.jpg",
+      url:
+        "https://ryoo.cc/blog/2025-06-20_intro_rhyn47",
+    },
+    {
+      title: "RHYl47 - aluminium case -",
+      overview: "Keyboard",
+      detail: "My second design keyboard and my endgame keyboard now.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/rhyl47-aluminium3.jpg",
+      url:
+        "https://github.com/ryoo14/keyboards",
+    },
+    {
+      title: "RHYl47 - resin case -",
+      overview: "Keyboard",
+      detail: "My first design keyboard and my endgame keyboard now.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/rhyl47-resin.jpg",
+      url:
+        "https://github.com/ryoo14/keyboards",
+    },
+    {
       title: "Neo65",
       overview: "Keyboard",
       detail: "Primary Keyboard.",
@@ -92,14 +124,6 @@ export const use: Contents = {
         "https://kprepublic.com/products/cstc40-40-rgb-40-hot-swappable-mechanical-keyboard-pcb-programmed-qmk-via-vial-firmware-rgb-switch-underglow-type-c-planck?srsltid=AfmBOopzhoxajTD1NGUYfGiU4vomMPIXu2eyM37cDoxRNIgB91XR8G4-",
     },
     {
-      title: "RHYn47",
-      overview: "Keyboard",
-      detail: "My first design keyboard and my endgame keyboard now.",
-      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/rhyn47_v3.jpg",
-      url:
-        "https://ryoo.cc/blog/2025-06-20_intro_rhyn47",
-    },
-    {
       title: 'M2 MacBook Air 13"',
       overview: "Laptop",
       detail: "Main machine.",
@@ -126,6 +150,13 @@ export const use: Contents = {
       detail: "Buoyancy makes everyday running fun.",
       thumbnail: "https://d3toh8on7lf5va.cloudfront.net/clifton9.jpg",
       url: "https://www.hoka.com/jp/clifton-9/1127895.html?dwvar_1127895_color=VRTL",
+    },
+    {
+      title: "Able Carry Daily Plus",
+      overview: "Bag",
+      detail: "Daily use",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/ablecarry.jpg",
+      url: "https://ablecarry.jp/products/daily-plus?variant=42348445204630",
     },
     {
       title: "Aer Sling Bag 3",
