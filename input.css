@@ -17,6 +17,14 @@
   @apply hover:text-rorange;
 }
 
+#blog-entry h4 {
+  @apply text-lg mt-5 mb-2;
+}
+
+#blog-entry h5 {
+  @apply text-lg mt-4 mb-1;
+}
+
 #blog-entry h6 {
   @apply text-xs text-gray-500;
 }
