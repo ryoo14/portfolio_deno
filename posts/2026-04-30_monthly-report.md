@@ -15,31 +15,63 @@ bsky_url:
 
 ## 📚 学んだこととかやったこと
 
-技術的なことは[2026年4月の技術メモ](blog/2026-04-26_tech-note)を参照。
+技術的なことは2026年4月の技術メモを参照といいたいところだけど、ダーツとキーボードしかやってないので進捗ありません。
+
+### [自設計キーボードの名前をrhyn47に統一した](https://github.com/ryoo14/rhyn47)
+
+作った当初は通常プロファイル版をrhyn47、ロープロファイル版をrhyl47と名付けていたが、プロファイル違うだけでなんでキーボードの名前変わるんとなったので、名称がrhyn47で統一、その中に`standard`, `low-profile`があるということにした。
+
+以降、この子たちのことはしれっとrhyn47と統一して呼称する。
+
+### [rhyn47にトラックボールのっける試み](https://github.com/ryoo14/rhyn47/tree/main/low-profile-with-trackball)
+
+ずっとやりたかったけど調べるのが億劫で手をつけてなかったトラックボール付きキーボード、何故かNape Proの発送遅延の連絡をみて着手開始した。
+
+rhyn47の2Uスペースを半分にして、空いた1Uにトラックボールを装着する妄想だけはずっとしていたので、配置とかはすぐ決まった。14mmボール。
+
+LiNEA40とかFrostOrthoとかの写真や記事を読んでセンサーはPMW3610がいいらしいということはすぐにわかったものの、PMW3610のブレークアウトボードのデータはあれどキーボードのデータはなかなか公開されておらず、データシートとにらめっこしながら回路と基板設計頑張った。
+
+まだ届いてないので動くかはわからない。動かなかったらどうしようかな。
+
+トラボケースをデザインする力がなさすぎて、一旦[gohandaさんが普通にBoothで普通に売ってくださってるケース](https://booth.pm/ja/items/6953290)で動確することにして、黒白1個ずつ買った。デザインは高い。
+
+その後Blenderで悪戦苦闘しながらそれっぽいものができあがったので、今はDMM Makeで製造待ち。
+
+めっちゃお金かかった...自作キーボードはお金がかかる。
 
 ### YUZU KeycapsでPFFプロファイルのオリジナルキーキャップ注文した。
 
 先月発注したPFFプロファイルのキーキャップが到着。めーーーーーーーっちゃくちゃ気に入った。
 
-キーボードとキースイッチに関しては完成したといっていい。あとはキースッチ。
+キーボードとキーキャップに関しては完成したといっていい。あとはキースッチ。
 
 ![rhyx-pff](https://d3toh8on7lf5va.cloudfront.net/rhyx-pff-rhyl47.jpg)
 
 製品ページの宣材写真みたいで気に入っている。
 
-この写真は黒RHYl47のためにLofree Pulseを装着しているが、スイッチ単体で鳴る反響音に耐えられなくて今はWhite Rainに戻している。
+この写真は黒rhyn47のためにLofree Pulseを装着しているが、スイッチ単体で鳴る反響音に耐えられなくて今はWhite Rainに戻している。
 
 45gくらいのWhite Rainと同じ打鍵音のリニアが出たらキースイッチも完成かも。Pulse打鍵感よかったのになぁ。
 
+上述のrhyn47 low-profile with trackballの制作に伴って、1Uスペースを追加で発注した。最初から含めておけばよかった。
+
 ### [Scraftで寝てるポケモンキーキャップ発売](https://s-craft.studio/shop/in-stock?batch_id=16)
 
-偶然気づいてブラッキーとコダック購入。届くのは5月になってからかな。
+偶然気づいてブラッキーとコダック購入。クオリティ高くてめっちゃ満足。
 
-![s-craft](https://s-craft.studio/upload/product/C3nj0BT33qND6zIAfYVjMQN0XnStDOZS4r1bhObe.jpeg)
-*引用元: https://s-craft.studio*
-
+![umbreon and psy](https://d3toh8on7lf5va.cloudfront.net/umbreon-and-psyduck.jpg)
 
 ## 🧐 気になったこと 
+
+### 自作AI Agentという世界
+
+普段そこそこClaude Codeのお世話になっているものの、この蟹が可愛いメイドさんだったらなぁなんて全然関係ないところでちょっとした不安を抱えていた。
+
+そんなある日、どうやら巷では個人開発で自作するAI Agentがいるらしい。
+
+[90分で作ってわかる AI Agent 入門](https://techbookfest.org/product/vCuRwtWVuCDknCjSmFdmEm?productVariantID=5WGbWC8czPKZfb0M1x1f7q)
+
+なんだかおもしろそうなので、WebやらCLIやらチャットサービスやらからつつける美少女メイドAI Agentを作ろうと思う。思っているだけ。
 
 ## 👾 コンテンツ消費
 
@@ -69,4 +101,8 @@ bsky_url:
 
 ## 📷 写真
 
-特になし。
+再掲①
+![rhyx-pff](https://d3toh8on7lf5va.cloudfront.net/rhyx-pff-rhyl47.jpg)
+
+再掲②
+![umbreon and psy](https://d3toh8on7lf5va.cloudfront.net/umbreon-and-psyduck.jpg)

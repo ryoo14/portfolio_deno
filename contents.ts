@@ -49,15 +49,15 @@ export const use: Contents = {
   type: "use",
   contents: [
     {
-      title: "RHYl47",
+      title: "rhyn47 low-profile",
       overview: "Keyboard",
       detail: "My second design keyboard and my endgame keyboard now.",
       thumbnail: "https://d3toh8on7lf5va.cloudfront.net/rhyx-pff-rhyl47.jpg",
       url:
-        "https://github.com/ryoo14/keyboards",
+        "https://github.com/ryoo14/rhyn47",
     },
     {
-      title: "RHYn47 - resin case -",
+      title: "rhyn47 - resin case -",
       overview: "Keyboard",
       detail: "My first design keyboard.",
       thumbnail: "https://d3toh8on7lf5va.cloudfront.net/rhyn47-abacus-mini.jpg",
@@ -65,7 +65,7 @@ export const use: Contents = {
         "https://ryoo.cc/blog/2025-06-20_intro_rhyn47",
     },
     {
-      title: "RHYn47 - transparent case -",
+      title: "rhyn47 - transparent case -",
       overview: "Keyboard",
       detail: "My first design keyboard.",
       thumbnail: "https://d3toh8on7lf5va.cloudfront.net/rhyn47-transparent.jpg",
