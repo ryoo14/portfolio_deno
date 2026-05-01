@@ -1,4 +1,5 @@
 import { Contents } from "./contents.ts"
+import { html } from "@hono/hono/html"
 
 export const Home = (props) => {
   return (
@@ -6,6 +7,8 @@ export const Home = (props) => {
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{props.pageTitle}</title>
+        <GA />
         <meta name="theme-color" content="#fffcf9" />
         <meta property="og:title" content={props.ogp.title} />
         <meta property="og:type" content={props.ogp.type} />
@@ -22,14 +25,13 @@ export const Home = (props) => {
         <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
         <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/vim.min.js"></script>
 
-        <script>hljs.highlightAll();</script>
+        <script>{html`hljs.highlightAll();`}</script>
         <script
           src="https://unpkg.com/htmx.org@2.0.4"
           integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
           crossorigin="anonymous"
         >
         </script>
-        <title>{props.pageTitle}</title>
       </head>
       <body>
         <div class="container flex flex-col justify-start items-center w-full lg:flex-row lg:block mt-0 lg:mt-20">
@@ -42,6 +44,21 @@ export const Home = (props) => {
         <script src="/static/main.js" />
       </body>
     </html>
+  )
+}
+
+const GA = () => {
+  return (
+    <>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDCV8JG18H"></script>
+      <script>{html`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YDCV8JG18H');
+      `}</script>
+    </>
   )
 }
 
