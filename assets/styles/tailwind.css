@@ -418,8 +418,8 @@
 }
 #blog-entry p {
   margin-bottom: calc(var(--spacing) * 1);
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-leading: calc(var(--spacing) * 8);
   line-height: calc(var(--spacing) * 8);
   --tw-font-weight: var(--font-weight-extralight);
@@ -428,8 +428,8 @@
 #blog-entry code {
   margin-top: calc(var(--spacing) * 2);
   margin-bottom: calc(var(--spacing) * 2);
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
 }
 #blog-entry p a {
   &:hover {
@@ -440,8 +440,8 @@
 }
 #blog-entry ul {
   margin-bottom: calc(var(--spacing) * 1);
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-font-weight: var(--font-weight-extralight);
   font-weight: var(--font-weight-extralight);
 }
@@ -455,8 +455,8 @@
 #blog-entry ol li {
   margin-bottom: calc(var(--spacing) * 1);
   list-style-type: decimal;
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-font-weight: var(--font-weight-extralight);
   font-weight: var(--font-weight-extralight);
 }
@@ -464,8 +464,8 @@
   margin-bottom: calc(var(--spacing) * 1);
   list-style-position: inside;
   list-style-type: disc;
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
 }
 #blog-entry li a {
   &:hover {
@@ -800,9 +800,6 @@
   }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
-  }
-  .align-middle {
-    vertical-align: middle;
   }
   .text-2xl {
     font-size: var(--text-2xl);
