@@ -49,6 +49,14 @@ export const use: Contents = {
   type: "use",
   contents: [
     {
+      title: "rhyn47 low-profile with trackball",
+      overview: "Keyboard",
+      detail: "My second design keyboard and my endgame keyboard now.",
+      thumbnail: "https://d3toh8on7lf5va.cloudfront.net/rhyn47-trackball.jpg",
+      url:
+        "https://github.com/ryoo14/rhyn47",
+    },
+    {
       title: "rhyn47 low-profile",
       overview: "Keyboard",
       detail: "My second design keyboard and my endgame keyboard now.",
