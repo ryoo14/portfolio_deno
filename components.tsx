@@ -36,7 +36,7 @@ export const Home = (props) => {
       <body>
         <div class="container flex flex-col justify-start items-center w-full lg:flex-row lg:block mt-0 lg:mt-20">
           <SideBar />
-          <div id="main-content" class="w-10/12 sm:w-11/12 lg:w-9/12 lg:absolute mt-24 sm:mt-32 mb-10 lg:left-56 lg:mt-0">
+          <div id="main-content" class="w-10/12 sm:w-11/12 lg:w-9/12 lg:absolute mb-10 lg:left-56 lg:mt-0">
             {props.children}
           </div>
           <Footer />
@@ -64,7 +64,7 @@ const GA = () => {
 
 const SideBar = () => {
   return (
-    <div class="sidebar flex flex-row justify-between items-center backdrop-blur-sm fixed top-0 lg:top-20 z-10 w-11/12 h-16 sm:w-11/12 sm:h-20 lg:h-28 lg:flex-col lg:left-16 lg:w-24">
+    <div class="sidebar flex flex-row justify-between items-center lg:backdrop-blur-sm lg:fixed lg:top-20 z-10 w-11/12 h-16 sm:w-11/12 sm:h-20 lg:h-28 lg:flex-col lg:left-16 lg:w-24">
       <object data="/static/ryoop.svg" class="h-12 lg:mb-20" />
       <div class="links flex flex-row w-4/6 sm:w-3/6 lg:w-24 justify-between items-center lg:flex-col">
         <a href="/about" hx-get="/about" hx-target="#main-content" hx-push-url="true" class="sidebar-link hover:text-rorange lg:mb-10" data-target="about">
@@ -107,7 +107,7 @@ export const ContentTemplate = (props: Contents) => {
   return (
     <div id={props.type} class="fade-in grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 2xl:grid-cols-4 2xl:gap-10" style="display: grid">
       {props.contents.map((content) => (
-        <div class="content">
+        <div class="content transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-lg">
           <a href={content.url} target="_blanck" rel="noopener noreferrer">
             <img src={content.thumbnail} class="h-auto w-auto" />
             <div class="content-overview flex flex-col">
