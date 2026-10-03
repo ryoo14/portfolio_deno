@@ -27,6 +27,12 @@ bsky_url:
 
 ### [響け！ユーフォニアム](https://annict.com/works/6688)
 
+<!-- bookmeter -->
+
+<!-- filmarks -->
+
+<!-- annict -->
+
 ## 📷 写真
 
 特になし。
