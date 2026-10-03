@@ -31,6 +31,14 @@ bsky_url:
 
 <!-- filmarks -->
 
+### [バカとテストと召喚獣にっ！ 『魔法秀吉ひでよし』](https://annict.com/works/17435)
+
+これは映画のテスト
+
+### [バカとテストと召喚獣にっ！ #1](https://annict.com/works/1649)
+
+これはテスト
+
 <!-- annict -->
 
 ## 📷 写真
