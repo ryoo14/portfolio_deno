@@ -41,10 +41,9 @@ bsky_url:
 
 ### [ブルシット・ジョブ クソどうでもいい仕事の理論](https://link.amazon/B0dKoC08D)
 
+亀のようにゆっくり読んでいる。
 
 ## 👾 コンテンツ消費
-
-### [響け！ユーフォニアム](https://annict.com/works/6688)
 
 ### [ドラハチ #1-10](https://bookmeter.com/books/20844888)
 
